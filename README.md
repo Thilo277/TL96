@@ -2,24 +2,24 @@
 
 Some basic translation of the stickers, in the cockpit:
 
-An = On;
-Auf = Open;
-Aus = Off;
-Batterie = Battery;
-flydat = flydat system (to see motor RPM etc.);
-Hoch = Up;
-iPad = iPad;
-Klappen = Flaps;
-Kopflastig = (in relation to trim) trim forward;
-Kraftstoffhahn = Fuel lever;
-Parkbremse = Parking Brake;
-Runter = Down;
-Schwanzlastig = (in relation to trim) trim backward;
-Start = Start;
-Trimmung = Trim;
-Zu = Closed;
-Zündung L = Magneto Left;
-Zündung R = Magneto Right;
+1. An = On;
+2. Auf = Open;
+3. Aus = Off;
+4. Batterie = Battery;
+5. flydat = flydat system (to see motor RPM etc.);
+6. Hoch = Up;
+7. iPad = iPad;
+8. Klappen = Flaps;
+9. Kopflastig = (in relation to trim) trim forward;
+10. Kraftstoffhahn = Fuel lever;
+11. Parkbremse = Parking Brake;
+12. Runter = Down;
+13. Schwanzlastig = (in relation to trim) trim backward;
+14. Start = Start;
+15. Trimmung = Trim;
+16. Zu = Closed;
+17. Zündung L = Magneto Left;
+18. Zündung R = Magneto Right;
 
 
 
