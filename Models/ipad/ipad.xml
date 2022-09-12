@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>ipad.ac</path>
+
+    <animation>
+        <object-name>charts</object-name>
+        <object-name>chartsscreen</object-name>
+        <object-name>checklists</object-name>
+        <object-name>welcome</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/ison</property>
+            <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>blackscreen</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/error</property>
+            <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>charts</object-name>
+        <object-name>checklists</object-name>
+        <object-name>welcome</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>homebutton</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>charts</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>2</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <object-name>chartsscreen</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>2</value>
+            </equals>
+        </condition>
+    </animation>
+
+</PropertyList>

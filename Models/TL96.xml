@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>TL96.ac</path>
+
+    <model>
+    <path>Aircraft/TL96/Models/TL96-instruments.xml</path>
+    <!--<offsets>
+		<x-m> 0.440 </x-m>
+		<y-m>-0.280 </y-m>
+		<z-m>-0.272 </z-m>
+	</offsets>-->
+    </model>
+
+
+    <animation>
+        <object-name>elevator</object-name>
+        <type>rotate</type>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>3.457</x-m>
+            <y-m> 0   </y-m>
+            <z-m> 0.245</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>elevtrim</object-name>
+        <type>rotate</type>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>3.457</x-m>
+            <y-m> 0   </y-m>
+            <z-m> 0.245</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>rudder</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>3.25334</x-m>
+            <y-m> 0   </y-m>
+            <z-m>1.10989</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>frontgear</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.948273</x-m>
+            <y-m> 0   </y-m>
+            <z-m>-0.244559</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>fronttire</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.948273</x-m>
+            <y-m> 0   </y-m>
+            <z-m>-0.244559</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Lrudder</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.82694</x-m>
+            <y-m>-0.02793</y-m>
+            <z-m>-0.309725</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Rrudder</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.82694</x-m>
+            <y-m>0.02793</y-m>
+            <z-m>-0.309725</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>prop</object-name>
+        <type>spin</type>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1</factor>
+        <center>
+            <x-m>-1.76726</x-m>
+            <y-m> 0   </y-m>
+            <z-m> 0.143847</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Lstick</object-name>
+        <type>rotate</type>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-0.323934</x-m>
+            <y-m> -0.250006  </y-m>
+            <z-m>-0.299477 </z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Rstick</object-name>
+        <type>rotate</type>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-0.323934</x-m>
+            <y-m> 0.250006  </y-m>
+            <z-m>-0.299477 </z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Lstick</object-name>
+        <type>rotate</type>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-0.323934</x-m>
+            <y-m> -0.250006  </y-m>
+            <z-m>-0.299477 </z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Rstick</object-name>
+        <type>rotate</type>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-0.323934</x-m>
+            <y-m> 0.250006  </y-m>
+            <z-m>-0.299477 </z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>mainwindowframe</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <interval-sec>2.3</interval-sec>
+            <binding>
+                <command>property-interpolate</command>
+                <property>aircraft/windows/windowopen</property>
+                <value type="double">1</value>
+                <time>2</time>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>mainwindowframe</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <interval-sec>2.3</interval-sec>
+            <binding>
+                <command>property-interpolate</command>
+                <property>aircraft/windows/windowopen</property>
+                <value type="double">0</value>
+                <time>2</time>>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <object-name>mainwindowframe</object-name>
+        <object-name>mainwindow</object-name>
+        <type>rotate</type>
+        <property>aircraft/windows/windowopen</property>
+        <factor>45</factor>
+        <center>
+            <x-m>-0.846367</x-m>
+            <y-m>0</y-m>
+            <z-m>0.389384</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Lail</object-name>
+        <type>rotate</type>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>25</factor>
+        <axis>
+            <x1-m>0.564662</x1-m>
+            <y1-m>-4.51189</y1-m>
+            <z1-m>0.183709</z1-m>
+            <x2-m>0.577518</x2-m>
+            <y2-m>-2.50868</y2-m>
+            <z2-m>0.023192</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Rail</object-name>
+        <type>rotate</type>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>25</factor>
+        <axis>
+            <x1-m>0.571087</x1-m>
+            <y1-m>4.513</y1-m>
+            <z1-m>0.183709</z1-m>
+            <x2-m>0.571088</x2-m>
+            <y2-m>2.50976</y2-m>
+            <z2-m>0.023192</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Rflap</object-name>
+        <type>rotate</type>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>-25</factor>
+        <axis>
+            <x1-m>0.571088</x1-m>
+            <y1-m>2.45299</y1-m>
+            <z1-m>0.018643</z1-m>
+            <x2-m>0.571088</x2-m>
+            <y2-m>0.642672</y2-m>
+            <z2-m>-0.126414</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>Lflap</object-name>
+        <type>rotate</type>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>-25</factor>
+        <axis>
+            <x1-m>0.571089</x1-m>
+            <y1-m>-0.642672</y1-m>
+            <z1-m>-0.126414</z1-m>
+            <x2-m>0.571089</x2-m>
+            <y2-m>-2.45299</y2-m>
+            <z2-m>0.018643</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>fuellow</object-name>
+        <condition>	
+            <less-than-equals>		
+            <property>consumables/fuel/tank/level-gal_us</property>				
+            <value>4.55</value>	
+            </less-than-equals>
+        </condition>
+        <emission>
+            <red>1</red>	
+            <green>0</green>	
+            <blue>0</blue>	
+        </emission>
+    </animation>
+
+    <animation>
+        <object-name>selector</object-name>
+        <type>rotate</type>
+        <property>controls/engines/engine/mixture</property>
+        <factor>-90</factor>
+        <axis>
+            <x1-m>-0.507128</x1-m>
+            <y1-m>-0.077252</y1-m>
+            <z1-m>-0.001417</z1-m>
+            <x2-m>-0.511889</x2-m>
+            <y2-m>-0.077252</y2-m>
+            <z2-m>-0.003597</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>parkbrake</object-name>
+        <type>translate</type>
+        <property>controls/gear/brake-parking</property>
+        <factor>0.03</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>selector</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/engines/engine/mixture</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>parkbrake</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/gear/brake-parking</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <object-name>throttle</object-name>
+        <type>rotate</type>
+        <property>controls/engines/engine/throttle</property>
+        <interpolation>
+            <entry>
+                <ind> 0.0</ind>
+                <dep> 25</dep>
+            </entry>
+            <entry>
+                <ind> 1</ind>
+                <dep> -25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-0.343258</x-m>
+            <y-m>-0.025</y-m>
+            <z-m>-0.215262</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>trim</object-name>
+        <type>rotate</type>
+        <property>controls/flight/elevator-trim</property>
+        <interpolation>
+            <entry>
+                <ind> -1.0</ind>
+                <dep> 30</dep>
+            </entry>
+            <entry>
+                <ind> 1</ind>
+                <dep> -30</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-0.343258</x-m>
+            <y-m>0.025157</y-m>
+            <z-m>-0.214235</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+</PropertyList>

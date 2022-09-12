@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+ <fx>
+    <engine>
+      <name>engine</name>
+      <mode>looped</mode>
+      <path>Aircraft/TL96/Sounds/wasp.wav</path>
+      <property>/engines/engine/running</property>
+      <volume>
+        <property>/engines/engine/rpm</property>
+        <factor>0.0002</factor>
+        <min>0.15</min>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>/sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.7</factor>
+      </volume>
+      <pitch>
+        <property>/engines/engine/rpm</property>
+        <factor>0.0002</factor>
+        <min>0.5</min>
+        <max>1.0</max>
+        <offset>0.15</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+<cranking>
+   <name>cranking</name>
+   <path>Aircraft/TL96/Sounds/cranking.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <property>/controls/engines/engine/starter</property>
+   </condition>
+  </cranking>
+
+  <coughing>
+   <name>coughing</name>
+   <path>Aircraft/TL96/Sounds/coughing.wav</path>
+   <mode>once</mode>
+   <condition>
+   <equals>
+    <property>/engines/engine/running</property>
+    <value>true</value>
+    </equals>
+   </condition>
+  </coughing>
+    <coughing2>
+   <name>coughing2</name>
+   <path>Aircraft/TL96/Sounds/coughing.wav</path>
+   <mode>once</mode>
+    <condition>
+   <equals>
+    <property>/engines/engine/running</property>
+    <value>false</value>
+    </equals>
+   </condition>
+  </coughing2>
+ </fx>
+</PropertyList>

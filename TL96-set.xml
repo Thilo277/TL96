@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <sim>
+        <description>TL96 Star</description>
+
+        <rating>
+            <FDM type="int">1</FDM>
+            <systems type="int">1</systems>
+            <cockpit type="int">1</cockpit>
+            <model type="int">1</model>
+        </rating>
+        <author>Thilo</author>
+        <flight-model>jsb</flight-model>
+        <aero>TL96</aero>
+        <model>
+            <path>Aircraft/TL96/Models/TL96.xml</path>
+        </model>
+
+        <view n="0">
+            <name>Pilot</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <x-offset-m type="double">-0.27</x-offset-m>
+                <y-offset-m type="double">0.51</y-offset-m>
+                <z-offset-m type="double">0.17</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <limits>
+                <enabled type="bool">true</enabled>
+                <left>
+                    <heading-max-deg type="double">140</heading-max-deg>
+                    <x-offset-max-m type="double">0.15</x-offset-max-m>
+                    <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                </left>
+                <right>
+                    <heading-max-deg type="double">140</heading-max-deg>
+                    <x-offset-max-m type="double">0.15</x-offset-max-m>
+                    <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                </right>
+                </limits>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
+
+        <sound>
+            <path type="string">Sounds/sound.xml</path>
+        </sound>
+
+        <systems>
+            <autopilot n="200">
+                <path>Aircraft/TL96/Systems/flydat.xml</path>
+            </autopilot>
+        </systems>
+
+    </sim>
+
+        <payload>
+            <weight>
+                <name type="string">Pilot</name>
+                <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+                <min-lb type="double">110.0</min-lb>
+                <max-lb type="double">330.0</max-lb>
+            </weight>
+        </payload>
+
+        <payload>
+            <weight>
+                <name type="string">Copilot</name>
+                <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+                <min-lb type="double">110.0</min-lb>
+                <max-lb type="double">330.0</max-lb>
+            </weight>
+        </payload>
+
+    <nasal>
+        <ar-3201>
+            <file>Aircraft/TL96/Models/Instruments/ar-3201/AR3201.nas</file>
+        </ar-3201>
+    </nasal>
+</PropertyList>

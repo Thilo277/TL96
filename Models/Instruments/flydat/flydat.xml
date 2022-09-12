@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>flydat.ac</path>
+
+  
+    <animation>
+        <type>material</type>
+        <object-name>status</object-name>
+        <condition>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
+        <emission>
+            <red>0</red>	
+            <green>1</green>	
+            <blue>0</blue>	
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>RPM</object-name>
+        <object-name>EGT</object-name>
+        <object-name>CGT</object-name>
+        <object-name>oiltemp</object-name>
+        <object-name>oilpress</object-name>
+        <condition>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
+        <specular>
+            <red>1</red>	
+            <green>1</green>	
+            <blue>1</blue>	
+        </specular>
+    </animation>
+
+    <animation>
+        <object-name>RPM</object-name>
+        <object-name>EGT</object-name>
+        <object-name>CGT</object-name>
+        <object-name>oiltemp</object-name>
+        <object-name>oilpress</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/flydat/ison</property>
+            <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>RPM</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>90</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.003491</x-m>
+        <y-m>-0.054122</y-m>
+        <z-m>0.006556</z-m>
+    </offsets>
+ 
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">engines/engine/rpm</property>
+    <factor type="double">0.0</factor> <!-- optional, scale the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">false</truncate> <!-- truncate to an integer value -->
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>LCDFont.ttf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.012233</max-height> <!-- the maximum height of the text -->
+    <max-width>0.03</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>EGT</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>90</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.003491</x-m>
+        <y-m>-0.026939</y-m>
+        <z-m>0.006556</z-m>
+    </offsets>
+ 
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">engines/engine/egt-degc</property>
+    <factor type="double">0.0</factor> <!-- optional, scale the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">false</truncate> <!-- truncate to an integer value -->
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>LCDFont.ttf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.012233</max-height> <!-- the maximum height of the text -->
+    <max-width>0.024819</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>CGT</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>90</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.003491</x-m>
+        <y-m>0.000084</y-m>
+        <z-m>0.006556</z-m>
+    </offsets>
+ 
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">engines/engine/cht-degc</property>
+    <factor type="double">0.0</factor> <!-- optional, scale the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">false</truncate> <!-- truncate to an integer value -->
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>LCDFont.ttf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.012233</max-height> <!-- the maximum height of the text -->
+    <max-width>0.024819</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>oiltemp</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>90</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.003491</x-m>
+        <y-m>0.027427</y-m>
+        <z-m>0.006556</z-m>
+    </offsets>
+ 
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">engines/engine/oil-temperature-degc</property>
+    <factor type="double">0.0</factor> <!-- optional, scale the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">false</truncate> <!-- truncate to an integer value -->
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>LCDFont.ttf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.012233</max-height> <!-- the maximum height of the text -->
+    <max-width>0.024819</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>oilpress</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>90</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.003491</x-m>
+        <y-m>0.027427</y-m>
+        <z-m>-0.004317</z-m>
+    </offsets>
+ 
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">engines/engine/oil-pressure-bar01</property>
+    <factor type="double">0.0</factor> <!-- optional, scale the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">false</truncate> <!-- truncate to an integer value -->
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>LCDFont.ttf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.012233</max-height> <!-- the maximum height of the text -->
+    <max-width>0.024819</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+</PropertyList>
