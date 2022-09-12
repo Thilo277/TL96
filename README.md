@@ -23,7 +23,7 @@ Some basic translation of the stickers, in the cockpit:
 
 
 
-Basic startup procedure:
+# Basic startup procedure:
 
 1. Fuel Tank ................ Full
 2. Parkbremse ............... Pulled
@@ -36,7 +36,7 @@ Basic startup procedure:
 9. Flaps .................... Runter (for takeoff)
 
 
-Basic shutdown procedure:
+# Basic shutdown procedure:
 
 
 1. Parkbremse ............... Pulled
@@ -48,4 +48,4 @@ Basic shutdown procedure:
 7. Batterie ................. Aus
 
 
-Note: most of the switches are controlled, by either using the left mouse button (mostly to turn them on) or to use the middle mouse button (to turn them off).
+# Note: most of the switches are controlled, by either using the left mouse button (mostly to turn them on) or to use the middle mouse button (to turn them off).
