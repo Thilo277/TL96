@@ -32,7 +32,7 @@ Some basic translation of the stickers, in the cockpit:
 5. Kraftstoffhahn ........... Auf
 6. Zündung L/R .............. An
 7. Starter .................. Press
-8. iPad ..................... On
+8. iPad ..................... An
 9. Flaps .................... Runter (for takeoff)
 
 
