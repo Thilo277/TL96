@@ -54,7 +54,7 @@
 
         <systems>
             <autopilot n="200">
-                <path>Aircraft/TL96/Systems/flydat.xml</path>
+                <path>Aircraft/TL96/Systems/systems.xml</path>
             </autopilot>
         </systems>
 
