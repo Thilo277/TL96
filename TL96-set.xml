@@ -18,6 +18,16 @@
                 <splash type="bool">true</splash>
                 <path>Previews/TL96-ex.png</path>
             </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-ex2.png</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-int.png</path>
+            </preview>
         </previews>
         <model>
             <path>Aircraft/TL96/Models/TL96.xml</path>
