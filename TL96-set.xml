@@ -4,14 +4,21 @@
         <description>TL96 Star</description>
 
         <rating>
-            <FDM type="int">1</FDM>
-            <systems type="int">1</systems>
-            <cockpit type="int">1</cockpit>
-            <model type="int">1</model>
+            <FDM type="int">4</FDM>
+            <systems type="int">4</systems>
+            <cockpit type="int">4</cockpit>
+            <model type="int">4</model>
         </rating>
-        <author>Thilo</author>
+        <author>Thilo (thilo2707@gmail.com)</author>
         <flight-model>jsb</flight-model>
         <aero>TL96</aero>
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-ex.png</path>
+            </preview>
+        </previews>
         <model>
             <path>Aircraft/TL96/Models/TL96.xml</path>
         </model>
