@@ -243,7 +243,7 @@
             <interval-sec>2.3</interval-sec>
             <binding>
                 <command>property-interpolate</command>
-                <property>aircraft/windows/windowopen</property>
+                <property>canopy/position-norm</property>
                 <value type="double">1</value>
                 <time>2</time>
             </binding>
@@ -259,7 +259,7 @@
             <interval-sec>2.3</interval-sec>
             <binding>
                 <command>property-interpolate</command>
-                <property>aircraft/windows/windowopen</property>
+                <property>canopy/position-norm</property>
                 <value type="double">0</value>
                 <time>2</time>>
             </binding>
@@ -270,7 +270,7 @@
         <object-name>mainwindowframe</object-name>
         <object-name>mainwindow</object-name>
         <type>rotate</type>
-        <property>aircraft/windows/windowopen</property>
+        <property>canopy/position-norm</property>
         <factor>45</factor>
         <center>
             <x-m>-0.846367</x-m>

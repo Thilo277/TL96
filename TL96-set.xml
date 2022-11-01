@@ -105,7 +105,7 @@
 
         <multiplay>
             <generic>
-             <float n="0" alias="/aircraft/windows/windowopen"/>
+             <float n="0" alias="canopy/position-norm"/>
             </generic>
         </multiplay>
 
@@ -149,13 +149,15 @@
         </electric>
     </controls>
     <aircraft>
-        <windows>
-            <windowopen>0</windowopen>
-        </windows>
         <battery>
             <switch>1</switch>
         </battery>
     </aircraft>
+    
+
+    <canopy>
+        <position-norm>0</position-norm>
+    </canopy>
 
     <input> 
         <keyboard>
