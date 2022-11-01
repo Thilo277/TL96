@@ -31,6 +31,9 @@
         </previews>
         <model>
             <path>Aircraft/TL96/Models/TL96.xml</path>
+            <livery>
+                <shininess>-0.9</shininess>
+            </livery>
         </model>
 
         <view n="0">
@@ -74,6 +77,37 @@
                 <path>Aircraft/TL96/Systems/systems.xml</path>
             </autopilot>
         </systems>
+
+
+        <hitches>
+            <aerotow>
+                <force_name_jsbsim type="string">hitch</force_name_jsbsim>
+                <force-is-calculated-by-other type="bool">true</force-is-calculated-by-other>
+                <mp-auto-connect-period type="float">1.0</mp-auto-connect-period>
+                <!-- OPTIONAL
+                <decoupled-force-and-rope-locations type="bool">true</decoupled-force-and-rope-locations>
+                <local-pos-x type="float">1.5</local-pos-x>
+                <local-pos-y type="float"> 0.00</local-pos-y>
+                <local-pos-z type="float">-0.3</local-pos-z>
+                -->
+            </aerotow>
+            <winch>
+                <force_name_jsbsim type="string">hitch</force_name_jsbsim>
+                <!-- OPTIONAL
+                <decoupled-force-and-rope-locations type="bool">true</decoupled-force-and-rope-locations>
+                <local-pos-x type="float">0.0</local-pos-x>
+                <local-pos-y type="float">0.0</local-pos-y
+                <local-pos-z type="float">0.0</local-pos-z>
+                -->
+            </winch>
+        </hitches>
+
+
+        <multiplay>
+            <generic>
+             <float n="0" alias="/aircraft/windows/windowopen"/>
+            </generic>
+        </multiplay>
 
     </sim>
 
@@ -122,5 +156,18 @@
             <switch>1</switch>
         </battery>
     </aircraft>
+
+    <input> 
+        <keyboard>
+            <key n="79">
+                <name>O</name>
+                <desc>Open aerotow-hook</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>towing.releaseHitch("aerotow")</script>
+                </binding>
+            </key>
+        </keyboard>
+    </input>
     
 </PropertyList>

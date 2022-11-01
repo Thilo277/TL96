@@ -13,6 +13,23 @@
 	</offsets>-->
     </model>
 
+    <effect>
+        <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+        <object-name>elevator</object-name>
+        <object-name>elevtrim</object-name>
+        <object-name>frontgear</object-name>
+        <object-name>Fuselage</object-name>
+        <object-name>Lail</object-name>
+        <object-name>Lflap</object-name>
+        <object-name>lwing</object-name>
+        <object-name>maingear</object-name>
+        <object-name>mainwindowframe</object-name>
+        <object-name>Rail</object-name>
+        <object-name>Rflap</object-name>
+        <object-name>rudder</object-name>
+        <object-name>rwing</object-name>
+    </effect>
+
 
     <animation>
         <object-name>elevator</object-name>
@@ -447,6 +464,81 @@
             <z>0</z>
         </axis>
     </animation>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>callsign</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>-0.571865</x-m>
+        <y-m>-0.30222</y-m>
+        <z-m>0.242464</z-m>
+    </offsets>
+
+
+    <!-- The string value of a property -->
+    <type type="string">text-value</type>
+    <property type="string">sim/multiplay/callsign</property>
+    <format type="string">%s</format> <!-- the sprintf() format to display the value -->
+ 
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+  
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+ 
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.015</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.017278</max-height> <!-- the maximum height of the text -->
+    <max-width>0.07305</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+ 
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+ 
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+ 
+</text>
+
+<animation>
+    <type>material</type>
+    <object-name>time</object-name>
+        <diffuse>
+        <red>0.0</red>
+        <green>0.0</green>
+        <blue>0.0</blue>
+    </diffuse>
+</animation>
 
 
 </PropertyList>

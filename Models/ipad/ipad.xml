@@ -149,7 +149,7 @@
 
 <animation>
     <type>material</type>
-    <object-name>text</object-name>
+    <object-name>time</object-name>
         <diffuse>
         <red>0.0</red>
         <green>0.0</green>
