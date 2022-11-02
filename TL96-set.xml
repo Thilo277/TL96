@@ -81,25 +81,14 @@
 
         <hitches>
             <aerotow>
-                <force_name_jsbsim type="string">hitch</force_name_jsbsim>
-                <force-is-calculated-by-other type="bool">true</force-is-calculated-by-other>
                 <mp-auto-connect-period type="float">1.0</mp-auto-connect-period>
-                <!-- OPTIONAL
+                
                 <decoupled-force-and-rope-locations type="bool">true</decoupled-force-and-rope-locations>
-                <local-pos-x type="float">1.5</local-pos-x>
+                <local-pos-x type="float">-3.51967</local-pos-x>
                 <local-pos-y type="float"> 0.00</local-pos-y>
-                <local-pos-z type="float">-0.3</local-pos-z>
-                -->
+                <local-pos-z type="float">0.074688</local-pos-z>
+            
             </aerotow>
-            <winch>
-                <force_name_jsbsim type="string">hitch</force_name_jsbsim>
-                <!-- OPTIONAL
-                <decoupled-force-and-rope-locations type="bool">true</decoupled-force-and-rope-locations>
-                <local-pos-x type="float">0.0</local-pos-x>
-                <local-pos-y type="float">0.0</local-pos-y
-                <local-pos-z type="float">0.0</local-pos-z>
-                -->
-            </winch>
         </hitches>
 
 
