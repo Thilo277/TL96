@@ -11,7 +11,7 @@ MATERIAL "marker2" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.00
 MATERIAL "metal" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.000
 OBJECT world
 name "Blender_exporter_v3.3__TL96.ac"
-kids 50
+kids 51
 OBJECT poly
 name "Cylinder"
 data 12
@@ -102802,6 +102802,26 @@ refs 4
 1 0.614249 0.148777
 3 0.614249 0.234036
 2 0.103442 0.234036
+kids 0
+OBJECT poly
+name "marker1.027"
+data 9
+Plane.038
+crease 40.0
+texture "markers.png"
+numvert 4
+-0.52801 0.00836 0.09675
+-0.52801 0.00836 0.05025
+-0.53102 0.01491 0.09675
+-0.53102 0.01491 0.05025
+numsurf 1
+SURF 0X0
+mat 7
+refs 4
+0 0.386741 0.443129
+1 0.881543 0.443129
+3 0.881543 0.519781
+2 0.386741 0.519781
 kids 0
 OBJECT poly
 name "parkbrake"

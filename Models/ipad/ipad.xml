@@ -9,7 +9,47 @@
         <object-name>chartsscreen</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
+        <object-name>checklistscreen</object-name>
         <object-name>time</object-name>
+        <object-name>infoscreen</object-name>
+        <object-name>information</object-name>
+
+        <object-name>cstartup</object-name>
+        <object-name>cbatt</object-name>
+        <object-name>cipad</object-name>
+        <object-name>cfueltank</object-name>
+        <object-name>cpark</object-name>
+        <object-name>cdat</object-name>
+        <object-name>cfuel</object-name>
+        <object-name>czund</object-name>
+        <object-name>cstart</object-name>
+        <object-name>cflaps</object-name>
+
+        <object-name>next</object-name>
+        <object-name>prev</object-name>
+
+        <object-name>cshutdown</object-name>
+        <object-name>csbatt</object-name>
+        <object-name>csipad</object-name>
+        <object-name>cspark</object-name>
+        <object-name>csdat</object-name>
+        <object-name>csfuel</object-name>
+        <object-name>cszund</object-name>
+        <object-name>csflaps</object-name>
+
+        <object-name>binformation</object-name>
+        <object-name>baltft</object-name>
+        <object-name>baltftv</object-name>
+        <object-name>baltm</object-name>
+        <object-name>baltmv</object-name>
+        <object-name>baltftnn</object-name>
+        <object-name>baltftvnn</object-name>
+        <object-name>baltmnn</object-name>
+        <object-name>baltmvnn</object-name>
+        <object-name>biaskt</object-name>
+        <object-name>biasktv</object-name>
+        <object-name>biaskmh</object-name>
+        <object-name>biaskmhv</object-name>
         <type>select</type>
         <condition>
             <equals>
@@ -33,6 +73,7 @@
     <animation>
         <object-name>charts</object-name>
         <object-name>checklists</object-name>
+        <object-name>information</object-name>
         <object-name>welcome</object-name>
         <type>select</type>
         <condition>
@@ -72,6 +113,88 @@
     </animation>
 
     <animation>
+        <type>pick</type>
+        <object-name>checklists</object-name>
+        <condition>
+            <equals>
+            <property>engines/engine/running</property>
+            <value>false</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>3</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>checklists</object-name>
+        <condition>
+            <equals>
+            <property>engines/engine/running</property>
+            <value>true</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>4</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>next</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>4</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>prev</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>3</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>information</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/screen</property>
+                <value>5</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
         <object-name>chartsscreen</object-name>
         <type>select</type>
         <condition>
@@ -81,6 +204,2443 @@
             </equals>
         </condition>
     </animation>
+
+    <animation>
+
+        <object-name>cstartup</object-name>
+        <object-name>cbatt</object-name>
+        <object-name>cipad</object-name>
+        <object-name>cfueltank</object-name>
+        <object-name>cpark</object-name>
+        <object-name>cdat</object-name>
+        <object-name>cfuel</object-name>
+        <object-name>czund</object-name>
+        <object-name>cstart</object-name>
+        <object-name>cflaps</object-name>
+
+        <object-name>next</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>3</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+    <object-name>checklistscreen</object-name>
+        <type>select</type>
+        <condition>
+            <or>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>3</value>
+            </equals>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>4</value>
+            </equals>
+            </or>
+        </condition>
+    </animation>
+
+    <animation>
+        
+
+        <object-name>cshutdown</object-name>
+        <object-name>csbatt</object-name>
+        <object-name>csipad</object-name>
+        <object-name>cspark</object-name>
+        <object-name>csdat</object-name>
+        <object-name>csfuel</object-name>
+        <object-name>cszund</object-name>
+        <object-name>csflaps</object-name>
+
+        <object-name>prev</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>4</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>infoscreen</object-name>
+        <object-name>binformation</object-name>
+        <object-name>baltft</object-name>
+        <object-name>baltftv</object-name>
+        <object-name>baltm</object-name>
+        <object-name>baltmv</object-name>
+        <object-name>baltftnn</object-name>
+        <object-name>baltftvnn</object-name>
+        <object-name>baltmnn</object-name>
+        <object-name>baltmvnn</object-name>
+        <object-name>biaskt</object-name>
+        <object-name>biasktv</object-name>
+        <object-name>biaskmh</object-name>
+        <object-name>biaskmhv</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+            <property>aircraft/ipad/screen</property>
+            <value>5</value>
+            </equals>
+        </condition>
+    </animation>
+
+<!--information board-->
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>binformation</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0</y-m>
+        <z-m>0.198859</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Information</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.02</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.02202</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltft</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.175744</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Hoehe AGL (ft)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltftv</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.175744</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">position/altitude-agl-ft</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltm</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.160977</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Hoehe AGL (m)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltmv</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.160977</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">position/altitude-agl-m</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltftnn</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.146209</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Hoehe (ft)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltftvnn</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.146209</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">position/altitude-ft</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltmnn</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.131442</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Hoehe (m)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>baltmvnn</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.131442</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">position/altitude-m</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>biaskt</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.116674</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Geschwindigkeit IAS (kts)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>biasktv</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.116674</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>biaskmh</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.101907</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Geschwindigkeit IAS (kmh)</text>   
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>biaskmhv</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0.074369</y-m>
+        <z-m>0.101907</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A number from a property -->
+    <type type="string">number-value</type>
+    <property type="string">instrumentation/airspeed-indicator/indicated-speed-kmh</property>
+    <factor type="double">1.0</factor> <!-- optional, scale the property's value -->
+    <offset type="double">0.0</offset> <!-- optional, shift the property's value -->
+    <format type="string">%.0f</format> <!-- sprintf() format to display -->
+    <truncate type="bool">true</truncate> <!-- truncate to an integer value -->    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>right-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<!--checklist items-->
+<!--___________________________________________________________________________________________________________________________-->
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cstartup</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0</y-m>
+        <z-m>0.198859</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Motorstart</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.02</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.02202</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cbatt</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.175744</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Batterie ................ An</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cipad</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.160977</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">iPad ...................... An</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cfueltank</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.146209</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Treibstofftank ...... Voll</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cpark</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.131442</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Parkbremse .......... Gezogen</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cdat</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.116674</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">FlyDat ................... An</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cfuel</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.101907</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Kraftstoffhahn ....... Auf</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>czund</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.087139</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Zuendung L/R ...... An</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cstart</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.072372</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Starter .................. Gedrueckt</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cflaps</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.057605</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Klappen ................. Runter</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cstartup</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+        <and>
+            <equals>
+                <property>controls/electric/battery-switch</property>
+                <value>true</value>
+            </equals>
+            <equals>
+                <property>aircraft/ipad/ison</property>
+                <value>1</value>
+            </equals>
+            <greater-than>
+                <property>consumables/fuel/tank/level-gal_us</property>
+                <value>9</value>
+            </greater-than>
+            <equals>
+                <property>controls/gear/brake-parking</property>
+                <value>1</value>
+            </equals>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>1</value>
+            </equals>
+            <equals>
+                <property>controls/engines/engine/mixture</property>
+                <value>1</value>
+            </equals>
+            <equals>
+                <property>controls/engines/engine/magnetos</property>
+                <value>3</value>
+            </equals>
+            <equals>
+                <property>engines/engine/running</property>
+                <value>true</value>
+            </equals>
+            <greater-than-equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.33</value>
+            </greater-than-equals>
+        </and>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cbatt</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/electric/battery-switch</property>
+                <value>true</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cipad</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>aircraft/ipad/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cfueltank</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <greater-than>
+                <property>consumables/fuel/tank/level-gal_us</property>
+                <value>9</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cpark</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/gear/brake-parking</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cdat</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cfuel</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/engines/engine/mixture</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>czund</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/engines/engine/magnetos</property>
+                <value>3</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cstart</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>engines/engine/running</property>
+                <value>true</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cflaps</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <greater-than-equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.33</value>
+            </greater-than-equals>
+        </condition>
+    </animation>
+
+
+<!--end of checklist items-->
+<!--___________________________________________________________________________________________________________________________-->
+
+<!--shutdown checklist items-->
+<!--___________________________________________________________________________________________________________________________-->
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cshutdown</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>0</y-m>
+        <z-m>0.198859</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Abstellen</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.02</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.02202</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>center-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cspark</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.175744</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Parkbremse .......... Gezogen</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>csflaps</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.160977</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Klappen ................. Hoch</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>csfuel</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.146209</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Kraftstoffhahn ........ Zu</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>cszund</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.131442</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Zuendung L/R ...... Aus</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>csdat</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.116674</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">FlyDat .................... Aus</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>csipad</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.101907</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">iPad ....................... Aus</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+<text>
+    <!-- It should have a name. Can be used for other animations -->
+    <name>csbatt</name>
+    <!-- Use offsets for the initial placement -->
+    <offsets>
+        <pitch-deg>90</pitch-deg>
+        <heading-deg>0</heading-deg>
+        <roll-deg>90</roll-deg>
+        <x-m>0.006335</x-m>
+        <y-m>-0.074369</y-m>
+        <z-m>0.087139</z-m>
+    </offsets>
+
+    <!-- what type of text to draw, use on of literal, text-value or number-value -->
+    <!-- A simple constant, never changing string -->
+    <type type="string">literal</type>
+    <text type="string">Batterie .................. Aus</text>    
+
+    <layout>left-to-right</layout> <!-- default -->
+    <!--
+    <layout>right-to-left</layout>
+    <layout>vertical</layout>
+    -->
+
+    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+    <character-size type="double">0.01</character-size> <!-- size (height) im meters -->
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <max-height>0.01136</max-height> <!-- the maximum height of the text -->
+    <max-width>0.148738</max-width> <!-- the maximum width of the text -->
+    <font-resolution>
+        <width type="int">32</width>
+        <height type="int">32</height>
+    </font-resolution>
+
+    <!-- chose one of the kerning types or omit for default -->
+    <kerning>default</kerning>
+    <!--
+    <kerning>unfitted</kerning>
+    <kerning>none</kerning>
+    -->
+
+    <alignment>left-center</alignment> <!-- alignment of the text itself -->
+    <!-- possible values are
+    <alignment>left-top</alignment>
+    <alignment>left-center</alignment>
+    <alignment>left-bottom</alignment>
+    <alignment>center-top</alignment>
+    <alignment>center-center</alignment>
+    <alignment>center-bottom</alignment>
+    <alignment>right-top</alignment>
+    <alignment>right-center</alignment>
+    <alignment>right-bottom</alignment>
+    <alignment>left-baseline</alignment>
+    <alignment>center-baseline</alignment>
+    <alignment>right-baseline</alignment>
+    <alignment>baseline</alignment>
+    -->
+
+</text>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cshutdown</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+        <and>
+            <equals>
+                <property>controls/gear/brake-parking</property>
+                <value>1</value>
+            </equals>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>0</value>
+            </equals>
+            <equals>
+                <property>controls/engines/engine/mixture</property>
+                <value>0</value>
+            </equals>
+            <equals>
+                <property>controls/engines/engine/magnetos</property>
+                <value>0</value>
+            </equals>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0</value>
+            </equals>
+        </and>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>csipad</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>csbatt</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cspark</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/gear/brake-parking</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>csdat</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>csfuel</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/engines/engine/mixture</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>cszund</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>controls/engines/engine/magnetos</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation> 
+        <type>material</type> 
+        <object-name>csflaps</object-name>
+            <emission>
+                <red>0.0</red>
+                <green>1.0</green>
+                <blue>0.0</blue>
+            </emission>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+
+<!--end of shutdown checklist items-->
+<!--___________________________________________________________________________________________________________________________-->
+
 
 <text>
     <!-- It should have a name. Can be used for other animations -->
@@ -163,9 +2723,49 @@
     <object-name>chartsscreen</object-name>
     <object-name>checklists</object-name>
     <object-name>welcome</object-name>
+    <object-name>checklistscreen</object-name>
     <object-name>time</object-name>
     <object-name>ipad</object-name>
     <object-name>homebutton</object-name>
+    <object-name>infoscreen</object-name>
+    <object-name>information</object-name>
+
+    <object-name>cstartup</object-name>
+    <object-name>cbatt</object-name>
+    <object-name>cipad</object-name>
+    <object-name>cfueltank</object-name>
+    <object-name>cpark</object-name>
+    <object-name>cdat</object-name>
+    <object-name>cfuel</object-name>
+    <object-name>czund</object-name>
+    <object-name>cstart</object-name>
+    <object-name>cflaps</object-name>
+
+    <object-name>next</object-name>
+    <object-name>prev</object-name>
+
+    <object-name>cshutdown</object-name>
+    <object-name>csbatt</object-name>
+    <object-name>csipad</object-name>
+    <object-name>cspark</object-name>
+    <object-name>csdat</object-name>
+    <object-name>csfuel</object-name>
+    <object-name>cszund</object-name>
+    <object-name>csflaps</object-name>
+
+    <object-name>binformation</object-name>
+    <object-name>baltft</object-name>
+    <object-name>baltftv</object-name>
+    <object-name>baltm</object-name>
+    <object-name>baltmv</object-name>
+    <object-name>baltftnn</object-name>
+    <object-name>baltftvnn</object-name>
+    <object-name>baltmnn</object-name>
+    <object-name>baltmvnn</object-name>
+    <object-name>biaskt</object-name>
+    <object-name>biasktv</object-name>
+    <object-name>biaskmh</object-name>
+    <object-name>biaskmhv</object-name>
     <property>aircraft/ipad/drop-current</property>
     <factor>0.1</factor>
     <offset-m>0</offset-m>
@@ -182,9 +2782,49 @@
     <object-name>chartsscreen</object-name>
     <object-name>checklists</object-name>
     <object-name>welcome</object-name>
+    <object-name>checklistscreen</object-name>
     <object-name>time</object-name>
     <object-name>ipad</object-name>
     <object-name>homebutton</object-name>
+    <object-name>infoscreen</object-name>
+    <object-name>information</object-name>
+
+    <object-name>cstartup</object-name>
+    <object-name>cbatt</object-name>
+    <object-name>cipad</object-name>
+    <object-name>cfueltank</object-name>
+    <object-name>cpark</object-name>
+    <object-name>cdat</object-name>
+    <object-name>cfuel</object-name>
+    <object-name>czund</object-name>
+    <object-name>cstart</object-name>
+    <object-name>cflaps</object-name>
+
+    <object-name>next</object-name>
+    <object-name>prev</object-name>
+
+    <object-name>cshutdown</object-name>
+    <object-name>csbatt</object-name>
+    <object-name>csipad</object-name>
+    <object-name>cspark</object-name>
+    <object-name>csdat</object-name>
+    <object-name>csfuel</object-name>
+    <object-name>cszund</object-name>
+    <object-name>csflaps</object-name>
+
+    <object-name>binformation</object-name>
+    <object-name>baltft</object-name>
+    <object-name>baltftv</object-name>
+    <object-name>baltm</object-name>
+    <object-name>baltmv</object-name>
+    <object-name>baltftnn</object-name>
+    <object-name>baltftvnn</object-name>
+    <object-name>baltmnn</object-name>
+    <object-name>baltmvnn</object-name>
+    <object-name>biaskt</object-name>
+    <object-name>biasktv</object-name>
+    <object-name>biaskmh</object-name>
+    <object-name>biaskmhv</object-name>
     <property>aircraft/ipad/drop-current</property>
     <factor>0.319663</factor>
     <offset-m>0</offset-m>
@@ -201,9 +2841,49 @@
     <object-name>chartsscreen</object-name>
     <object-name>checklists</object-name>
     <object-name>welcome</object-name>
+    <object-name>checklistscreen</object-name>
     <object-name>time</object-name>
     <object-name>ipad</object-name>
     <object-name>homebutton</object-name>
+    <object-name>infoscreen</object-name>
+    <object-name>information</object-name>
+
+    <object-name>cstartup</object-name>
+    <object-name>cbatt</object-name>
+    <object-name>cipad</object-name>
+    <object-name>cfueltank</object-name>
+    <object-name>cpark</object-name>
+    <object-name>cdat</object-name>
+    <object-name>cfuel</object-name>
+    <object-name>czund</object-name>
+    <object-name>cstart</object-name>
+    <object-name>cflaps</object-name>
+
+    <object-name>next</object-name>
+    <object-name>prev</object-name>
+
+    <object-name>cshutdown</object-name>
+    <object-name>csbatt</object-name>
+    <object-name>csipad</object-name>
+    <object-name>cspark</object-name>
+    <object-name>csdat</object-name>
+    <object-name>csfuel</object-name>
+    <object-name>cszund</object-name>
+    <object-name>csflaps</object-name>
+
+    <object-name>binformation</object-name>
+    <object-name>baltft</object-name>
+    <object-name>baltftv</object-name>
+    <object-name>baltm</object-name>
+    <object-name>baltmv</object-name>
+    <object-name>baltftnn</object-name>
+    <object-name>baltftvnn</object-name>
+    <object-name>baltmnn</object-name>
+    <object-name>baltmvnn</object-name>
+    <object-name>biaskt</object-name>
+    <object-name>biasktv</object-name>
+    <object-name>biaskmh</object-name>
+    <object-name>biaskmhv</object-name>
     <property>aircraft/ipad/drop-current</property>
     <factor>-0.41</factor>
     <offset-m>0</offset-m>
@@ -219,9 +2899,49 @@
     <object-name>chartsscreen</object-name>
     <object-name>checklists</object-name>
     <object-name>welcome</object-name>
+    <object-name>checklistscreen</object-name>
     <object-name>time</object-name>
     <object-name>ipad</object-name>
     <object-name>homebutton</object-name>
+    <object-name>infoscreen</object-name>
+    <object-name>information</object-name>
+
+    <object-name>cstartup</object-name>
+    <object-name>cbatt</object-name>
+    <object-name>cipad</object-name>
+    <object-name>cfueltank</object-name>
+    <object-name>cpark</object-name>
+    <object-name>cdat</object-name>
+    <object-name>cfuel</object-name>
+    <object-name>czund</object-name>
+    <object-name>cstart</object-name>
+    <object-name>cflaps</object-name>
+
+    <object-name>next</object-name>
+    <object-name>prev</object-name>
+
+    <object-name>cshutdown</object-name>
+    <object-name>csbatt</object-name>
+    <object-name>csipad</object-name>
+    <object-name>cspark</object-name>
+    <object-name>csdat</object-name>
+    <object-name>csfuel</object-name>
+    <object-name>cszund</object-name>
+    <object-name>csflaps</object-name>
+
+    <object-name>binformation</object-name>
+    <object-name>baltft</object-name>
+    <object-name>baltftv</object-name>
+    <object-name>baltm</object-name>
+    <object-name>baltmv</object-name>
+    <object-name>baltftnn</object-name>
+    <object-name>baltftvnn</object-name>
+    <object-name>baltmnn</object-name>
+    <object-name>baltmvnn</object-name>
+    <object-name>biaskt</object-name>
+    <object-name>biasktv</object-name>
+    <object-name>biaskmh</object-name>
+    <object-name>biaskmhv</object-name>
     <type>rotate</type>
     <property>aircraft/ipad/drop-current</property>
     <factor>-90</factor>
@@ -243,9 +2963,49 @@
     <object-name>chartsscreen</object-name>
     <object-name>checklists</object-name>
     <object-name>welcome</object-name>
+    <object-name>checklistscreen</object-name>
     <object-name>time</object-name>
     <object-name>ipad</object-name>
     <object-name>homebutton</object-name>
+    <object-name>infoscreen</object-name>
+    <object-name>information</object-name>
+
+    <object-name>cstartup</object-name>
+    <object-name>cbatt</object-name>
+    <object-name>cipad</object-name>
+    <object-name>cfueltank</object-name>
+    <object-name>cpark</object-name>
+    <object-name>cdat</object-name>
+    <object-name>cfuel</object-name>
+    <object-name>czund</object-name>
+    <object-name>cstart</object-name>
+    <object-name>cflaps</object-name>
+
+    <object-name>next</object-name>
+    <object-name>prev</object-name>
+
+    <object-name>cshutdown</object-name>
+    <object-name>csbatt</object-name>
+    <object-name>csipad</object-name>
+    <object-name>cspark</object-name>
+    <object-name>csdat</object-name>
+    <object-name>csfuel</object-name>
+    <object-name>cszund</object-name>
+    <object-name>csflaps</object-name>
+
+    <object-name>binformation</object-name>
+    <object-name>baltft</object-name>
+    <object-name>baltftv</object-name>
+    <object-name>baltm</object-name>
+    <object-name>baltmv</object-name>
+    <object-name>baltftnn</object-name>
+    <object-name>baltftvnn</object-name>
+    <object-name>baltmnn</object-name>
+    <object-name>baltmvnn</object-name>
+    <object-name>biaskt</object-name>
+    <object-name>biasktv</object-name>
+    <object-name>biaskmh</object-name>
+    <object-name>biaskmhv</object-name>
     <type>rotate</type>
     <property>aircraft/ipad/drop-current</property>
     <factor>45</factor>

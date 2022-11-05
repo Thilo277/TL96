@@ -5,7 +5,7 @@
 
         <rating>
             <FDM type="int">4</FDM>
-            <systems type="int">4</systems>
+            <systems type="int">5</systems>
             <cockpit type="int">4</cockpit>
             <model type="int">4</model>
         </rating>
@@ -138,6 +138,16 @@
         </electric>
     </controls>
     <aircraft>
+        <ipad>
+            <ison>0</ison>
+        </ipad>
+        <flydat>
+            <ison>0</ison>
+        </flydat>
+        <magnetos>
+            <Lmag>0</Lmag>
+            <Rmag>0</Rmag>
+        </magnetos>
         <battery>
             <switch>1</switch>
         </battery>

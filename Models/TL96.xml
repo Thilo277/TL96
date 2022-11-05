@@ -237,6 +237,12 @@
     <animation>
         <type>pick</type>
         <object-name>mainwindowframe</object-name>
+        <condition>
+            <equals>
+            <property>canopy/position-norm</property>
+            <value>0</value>
+            </equals>
+        </condition>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -253,15 +259,21 @@
     <animation>
         <type>pick</type>
         <object-name>mainwindowframe</object-name>
+        <condition>
+            <equals>
+            <property>canopy/position-norm</property>
+            <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <interval-sec>2.3</interval-sec>
             <binding>
                 <command>property-interpolate</command>
                 <property>canopy/position-norm</property>
                 <value type="double">0</value>
-                <time>2</time>>
+                <time>2</time>
             </binding>
         </action>
     </animation>

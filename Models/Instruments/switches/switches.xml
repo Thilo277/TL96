@@ -7,6 +7,12 @@
     <animation>
         <type>pick</type>
         <object-name>Lmag</object-name>
+        <condition>
+            <equals>
+            <property>aircraft/magnetos/Lmag</property>
+            <value>0</value>
+            </equals>
+        </condition>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -28,8 +34,14 @@
     <animation>
         <type>pick</type>
         <object-name>Lmag</object-name>
+        <condition>
+            <equals>
+            <property>aircraft/magnetos/Lmag</property>
+            <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
@@ -49,6 +61,12 @@
     <animation>
         <type>pick</type>
         <object-name>Rmag</object-name>
+        <condition>
+            <equals>
+            <property>aircraft/magnetos/Rmag</property>
+            <value>0</value>
+            </equals>
+        </condition>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -70,8 +88,14 @@
     <animation>
         <type>pick</type>
         <object-name>Rmag</object-name>
+        <condition>
+            <equals>
+            <property>aircraft/magnetos/Rmag</property>
+            <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
@@ -152,6 +176,12 @@
     <animation>
         <type>pick</type>
         <object-name>batt</object-name>
+        <condition>
+            <equals>
+            <property>controls/electric/battery-switch</property>
+            <value>0</value>
+            </equals>
+        </condition>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -171,8 +201,14 @@
     <animation>
         <type>pick</type>
         <object-name>batt</object-name>
+        <condition>
+            <equals>
+            <property>controls/electric/battery-switch</property>
+            <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-assign</command>
@@ -235,10 +271,16 @@
         <type>pick</type>
         <object-name>avionics</object-name>
         <condition>
+            <and>
             <equals>
                 <property>controls/electric/battery-switch</property>
                 <value>true</value>
             </equals>
+            <equals>
+                <property>aircraft/ipad/ison</property>
+                <value>0</value>
+            </equals>
+            </and>
         </condition>
         <action>
             <button>0</button>
@@ -259,8 +301,14 @@
     <animation>
         <type>pick</type>
         <object-name>avionics</object-name>
+        <condition>
+            <equals>
+                <property>aircraft/ipad/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-assign</command>
@@ -291,10 +339,16 @@
         <type>pick</type>
         <object-name>flydat</object-name>
         <condition>
+        <and>
             <equals>
                 <property>controls/electric/battery-switch</property>
                 <value>true</value>
             </equals>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>0</value>
+            </equals>
+        </and>
         </condition>
         <action>
             <button>0</button>
@@ -310,8 +364,14 @@
     <animation>
         <type>pick</type>
         <object-name>flydat</object-name>
+        <condition>
+            <equals>
+                <property>aircraft/flydat/ison</property>
+                <value>1</value>
+            </equals>
+        </condition>
         <action>
-            <button>1</button>
+            <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-assign</command>

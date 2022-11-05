@@ -166,4 +166,49 @@
   <output>aircraft/ipad/drop-current</output>
 </filter>
 
+<!--iPad information board-->
+
+<filter>
+    <type>gain</type>
+    <gain>1.0</gain>
+    <input>
+        <expression>
+            <div>
+                <property>position/altitude-agl-ft</property>
+                <value>3.281</value>
+            </div>
+        </expression>
+    </input>
+    <output>position/altitude-agl-m</output>
+</filter>
+
+<filter>
+    <type>gain</type>
+    <gain>1.0</gain>
+    <input>
+        <expression>
+            <div>
+                <property>position/altitude-ft</property>
+                <value>3.281</value>
+            </div>
+        </expression>
+    </input>
+    <output>position/altitude-m</output>
+</filter>
+
+<filter>
+    <type>gain</type>
+    <gain>1.0</gain>
+    <input>
+        <expression>
+            <product>
+                <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+                <value>1.852</value>
+            </product>
+        </expression>
+    </input>
+    <output>instrumentation/airspeed-indicator/indicated-speed-kmh</output>
+</filter>
+
+
 </PropertyList>
