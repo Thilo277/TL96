@@ -13,6 +13,12 @@
         <object-name>time</object-name>
         <object-name>infoscreen</object-name>
         <object-name>information</object-name>
+        <object-name>settings</object-name>
+        <object-name>mail</object-name>
+        <object-name>photos</object-name>
+        <object-name>camera</object-name>
+        <object-name>gas</object-name>
+        <object-name>checklist2</object-name>
 
         <object-name>cstartup</object-name>
         <object-name>cbatt</object-name>
@@ -52,10 +58,16 @@
         <object-name>biaskmhv</object-name>
         <type>select</type>
         <condition>
+        <and>
             <equals>
             <property>aircraft/ipad/ison</property>
             <value>1</value>
             </equals>
+            <equals>
+            <property>aircraft/ipad/error</property>
+            <value>0</value>
+            </equals>
+        </and>
         </condition>
     </animation>
 
@@ -63,10 +75,16 @@
         <object-name>blackscreen</object-name>
         <type>select</type>
         <condition>
+        <and>
             <equals>
             <property>aircraft/ipad/error</property>
             <value>1</value>
             </equals>
+            <equals>
+            <property>aircraft/ipad/ison</property>
+            <value>1</value>
+            </equals>
+        </and>
         </condition>
     </animation>
 
@@ -75,6 +93,12 @@
         <object-name>checklists</object-name>
         <object-name>information</object-name>
         <object-name>welcome</object-name>
+        <object-name>settings</object-name>
+        <object-name>mail</object-name>
+        <object-name>photos</object-name>
+        <object-name>camera</object-name>
+        <object-name>gas</object-name>
+        <object-name>checklist2</object-name>
         <type>select</type>
         <condition>
             <equals>
@@ -93,6 +117,29 @@
             <binding>
                 <command>property-assign</command>
                 <property>aircraft/ipad/screen</property>
+                <value>1</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/error</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>settings</object-name>
+        <object-name>mail</object-name>
+        <object-name>photos</object-name>
+        <object-name>camera</object-name>
+        <object-name>gas</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/error</property>
                 <value>1</value>
             </binding>
         </action>
@@ -115,6 +162,7 @@
     <animation>
         <type>pick</type>
         <object-name>checklists</object-name>
+        <object-name>checklist2</object-name>
         <condition>
             <equals>
             <property>engines/engine/running</property>
@@ -135,6 +183,7 @@
     <animation>
         <type>pick</type>
         <object-name>checklists</object-name>
+        <object-name>checklist2</object-name>
         <condition>
             <equals>
             <property>engines/engine/running</property>
@@ -2729,6 +2778,12 @@
     <object-name>homebutton</object-name>
     <object-name>infoscreen</object-name>
     <object-name>information</object-name>
+    <object-name>settings</object-name>
+    <object-name>mail</object-name>
+    <object-name>photos</object-name>
+    <object-name>camera</object-name>
+    <object-name>gas</object-name>
+    <object-name>checklist2</object-name>
 
     <object-name>cstartup</object-name>
     <object-name>cbatt</object-name>
@@ -2788,6 +2843,12 @@
     <object-name>homebutton</object-name>
     <object-name>infoscreen</object-name>
     <object-name>information</object-name>
+    <object-name>settings</object-name>
+    <object-name>mail</object-name>
+    <object-name>photos</object-name>
+    <object-name>camera</object-name>
+    <object-name>gas</object-name>
+    <object-name>checklist2</object-name>
 
     <object-name>cstartup</object-name>
     <object-name>cbatt</object-name>
@@ -2847,6 +2908,12 @@
     <object-name>homebutton</object-name>
     <object-name>infoscreen</object-name>
     <object-name>information</object-name>
+    <object-name>settings</object-name>
+    <object-name>mail</object-name>
+    <object-name>photos</object-name>
+    <object-name>camera</object-name>
+    <object-name>gas</object-name>
+    <object-name>checklist2</object-name>
 
     <object-name>cstartup</object-name>
     <object-name>cbatt</object-name>
@@ -2905,6 +2972,12 @@
     <object-name>homebutton</object-name>
     <object-name>infoscreen</object-name>
     <object-name>information</object-name>
+    <object-name>settings</object-name>
+    <object-name>mail</object-name>
+    <object-name>photos</object-name>
+    <object-name>camera</object-name>
+    <object-name>gas</object-name>
+    <object-name>checklist2</object-name>
 
     <object-name>cstartup</object-name>
     <object-name>cbatt</object-name>
@@ -2969,6 +3042,12 @@
     <object-name>homebutton</object-name>
     <object-name>infoscreen</object-name>
     <object-name>information</object-name>
+    <object-name>settings</object-name>
+    <object-name>mail</object-name>
+    <object-name>photos</object-name>
+    <object-name>camera</object-name>
+    <object-name>gas</object-name>
+    <object-name>checklist2</object-name>
 
     <object-name>cstartup</object-name>
     <object-name>cbatt</object-name>

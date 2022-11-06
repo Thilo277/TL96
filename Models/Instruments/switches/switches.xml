@@ -295,6 +295,11 @@
                 <property>aircraft/ipad/screen</property>
                 <value>1</value>
             </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>aircraft/ipad/error</property>
+                <value>0</value>
+            </binding>
         </action>
     </animation>
 
