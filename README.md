@@ -48,4 +48,4 @@ Some basic translation of the stickers, in the cockpit:
 7. Batterie ................. Aus
 
 
-# Note: you no longer need to press middle mouse button to turn off switches, except for the flaps lever
+# Note: most of the switches are controlled, by either using the left mouse button (mostly to turn them on) or to use the middle mouse button (to turn them off).

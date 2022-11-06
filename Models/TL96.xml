@@ -544,13 +544,75 @@
 
 <animation>
     <type>material</type>
-    <object-name>time</object-name>
+    <object-name>callsign</object-name>
         <diffuse>
         <red>0.0</red>
         <green>0.0</green>
         <blue>0.0</blue>
     </diffuse>
 </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ruddertrim</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>0.01</step>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ruddertrim</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>-0.01</step>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ruddertrim</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0</interval-sec>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/flight/rudder-trim</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <object-name>ruddertrim</object-name>
+        <type>rotate</type>
+        <property>controls/flight/rudder-trim</property>
+        <factor>45</factor>
+        <center>
+            <x-m>-0.502187</x-m>
+            <y-m>0.051896</y-m>
+            <z-m>-0.000496</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
 
 </PropertyList>
