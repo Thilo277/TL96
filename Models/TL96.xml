@@ -155,15 +155,54 @@
         <property>engines/engine[0]/rpm</property>
         <factor>1</factor>
         <center>
-            <x-m>-1.76726</x-m>
+            <x-m>-1.76376</x-m>
             <y-m> 0   </y-m>
-            <z-m> 0.143847</z-m>
+            <z-m>0.143847</z-m>
         </center>
         <axis>
             <x>-1</x>
             <y>0</y>
             <z>0</z>
         </axis>
+    </animation>
+
+    <animation>
+        <object-name>propdisk</object-name>
+        <type>spin</type>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1</factor>
+        <center>
+            <x-m>-1.76052</x-m>
+            <y-m> 0   </y-m>
+            <z-m>0.143847</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>propdisk</object-name>
+        <type>select</type>
+            <condition>
+                <greater-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>600</value>
+                </greater-than>
+            </condition>
+    </animation>
+
+    <animation>
+        <object-name>prop</object-name>
+        <type>select</type>
+            <condition>
+                <less-than-equals>
+                <property>engines/engine[0]/rpm</property>
+                <value>600</value>
+                </less-than-equals>
+            </condition>
     </animation>
 
     <animation>
