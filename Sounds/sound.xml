@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
- <fx>
+  <fx>
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -28,36 +28,36 @@
       <max-dist>1000</max-dist>
     </engine>
 
-<cranking>
-   <name>cranking</name>
-   <path>Aircraft/TL96/Sounds/cranking.wav</path>
-   <mode>looped</mode>
-   <condition>
-    <property>/controls/engines/engine/starter</property>
-   </condition>
-  </cranking>
+    <cranking>
+      <name>cranking</name>
+      <path>Aircraft/TL96/Sounds/cranking.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>/controls/engines/engine/starter</property>
+      </condition>
+    </cranking>
 
-  <coughing>
-   <name>coughing</name>
-   <path>Aircraft/TL96/Sounds/coughing.wav</path>
-   <mode>once</mode>
-   <condition>
-   <equals>
-    <property>/engines/engine/running</property>
-    <value>true</value>
-    </equals>
-   </condition>
-  </coughing>
+    <coughing>
+      <name>coughing</name>
+      <path>Aircraft/TL96/Sounds/coughing.wav</path>
+      <mode>once</mode>
+      <condition>
+        <equals>
+          <property>/engines/engine/running</property>
+          <value>true</value>
+        </equals>
+      </condition>
+    </coughing>
     <coughing2>
-   <name>coughing2</name>
-   <path>Aircraft/TL96/Sounds/coughing.wav</path>
-   <mode>once</mode>
-    <condition>
-   <equals>
-    <property>/engines/engine/running</property>
-    <value>false</value>
-    </equals>
-   </condition>
-  </coughing2>
- </fx>
+      <name>coughing2</name>
+      <path>Aircraft/TL96/Sounds/coughing.wav</path>
+      <mode>once</mode>
+      <condition>
+        <equals>
+          <property>/engines/engine/running</property>
+          <value>false</value>
+        </equals>
+      </condition>
+    </coughing2>
+  </fx>
 </PropertyList>

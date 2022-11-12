@@ -2,15 +2,15 @@
 
 <PropertyList>
 
-	<path>switches.ac</path>
+    <path>switches.ac</path>
 
     <animation>
         <type>pick</type>
         <object-name>Lmag</object-name>
         <condition>
             <equals>
-            <property>aircraft/magnetos/Lmag</property>
-            <value>0</value>
+                <property>aircraft/magnetos/Lmag</property>
+                <value>0</value>
             </equals>
         </condition>
         <action>
@@ -36,8 +36,8 @@
         <object-name>Lmag</object-name>
         <condition>
             <equals>
-            <property>aircraft/magnetos/Lmag</property>
-            <value>1</value>
+                <property>aircraft/magnetos/Lmag</property>
+                <value>1</value>
             </equals>
         </condition>
         <action>
@@ -63,8 +63,8 @@
         <object-name>Rmag</object-name>
         <condition>
             <equals>
-            <property>aircraft/magnetos/Rmag</property>
-            <value>0</value>
+                <property>aircraft/magnetos/Rmag</property>
+                <value>0</value>
             </equals>
         </condition>
         <action>
@@ -90,8 +90,8 @@
         <object-name>Rmag</object-name>
         <condition>
             <equals>
-            <property>aircraft/magnetos/Rmag</property>
-            <value>1</value>
+                <property>aircraft/magnetos/Rmag</property>
+                <value>1</value>
             </equals>
         </condition>
         <action>
@@ -164,11 +164,11 @@
                 <value>true</value>
             </binding>
             <mod-up>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/engines/engine/starter</property>
-                <value>false</value>
-            </binding>
+                <binding>
+                    <command>property-assign</command>
+                    <property>controls/engines/engine/starter</property>
+                    <value>false</value>
+                </binding>
             </mod-up>
         </action>
     </animation>
@@ -178,8 +178,8 @@
         <object-name>batt</object-name>
         <condition>
             <equals>
-            <property>controls/electric/battery-switch</property>
-            <value>0</value>
+                <property>controls/electric/battery-switch</property>
+                <value>0</value>
             </equals>
         </condition>
         <action>
@@ -203,8 +203,8 @@
         <object-name>batt</object-name>
         <condition>
             <equals>
-            <property>controls/electric/battery-switch</property>
-            <value>1</value>
+                <property>controls/electric/battery-switch</property>
+                <value>1</value>
             </equals>
         </condition>
         <action>
@@ -256,15 +256,15 @@
     </animation>
 
     <animation>
-    <type>translate</type>
-    <object-name>starter</object-name>
-    <property>controls/engines/engine/starter</property>
-    <factor>0.004</factor>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
+        <type>translate</type>
+        <object-name>starter</object-name>
+        <property>controls/engines/engine/starter</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
     </animation>
 
     <animation>
@@ -272,14 +272,14 @@
         <object-name>avionics</object-name>
         <condition>
             <and>
-            <equals>
-                <property>controls/electric/battery-switch</property>
-                <value>true</value>
-            </equals>
-            <equals>
-                <property>aircraft/ipad/ison</property>
-                <value>0</value>
-            </equals>
+                <equals>
+                    <property>controls/electric/battery-switch</property>
+                    <value>true</value>
+                </equals>
+                <equals>
+                    <property>aircraft/ipad/ison</property>
+                    <value>0</value>
+                </equals>
             </and>
         </condition>
         <action>
@@ -344,16 +344,16 @@
         <type>pick</type>
         <object-name>flydat</object-name>
         <condition>
-        <and>
-            <equals>
-                <property>controls/electric/battery-switch</property>
-                <value>true</value>
-            </equals>
-            <equals>
-                <property>aircraft/flydat/ison</property>
-                <value>0</value>
-            </equals>
-        </and>
+            <and>
+                <equals>
+                    <property>controls/electric/battery-switch</property>
+                    <value>true</value>
+                </equals>
+                <equals>
+                    <property>aircraft/flydat/ison</property>
+                    <value>0</value>
+                </equals>
+            </and>
         </condition>
         <action>
             <button>0</button>

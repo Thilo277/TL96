@@ -2,104 +2,104 @@
 
 <PropertyList>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/comp/comp.xml</path>
-	<offsets>
-		<x-m>-0.610615</x-m>
-		<y-m> 0    </y-m>
-		<z-m>0.387961</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/comp/comp.xml</path>
+		<offsets>
+			<x-m>-0.610615</x-m>
+			<y-m> 0    </y-m>
+			<z-m>0.387961</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/asi/asi.xml</path>
-	<offsets>
-		<x-m>-0.571461</x-m>
-		<y-m>-0.324623</y-m>
-		<z-m>0.167189</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/asi/asi.xml</path>
+		<offsets>
+			<x-m>-0.571461</x-m>
+			<y-m>-0.324623</y-m>
+			<z-m>0.167189</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/alt/alt.xml</path>
-	<offsets>
-		<x-m>-0.571461</x-m>
-		<y-m>-0.216811</y-m>
-		<z-m>0.167189</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/alt/alt.xml</path>
+		<offsets>
+			<x-m>-0.571461</x-m>
+			<y-m>-0.216811</y-m>
+			<z-m>0.167189</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/winter-ball/ball.xml</path>
-	<offsets>
-		<x-m>-0.571164</x-m>
-		<y-m>-0.190954</y-m>
-		<z-m>0.264216</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/winter-ball/ball.xml</path>
+		<offsets>
+			<x-m>-0.571164</x-m>
+			<y-m>-0.190954</y-m>
+			<z-m>0.264216</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/rpm/rpm.xml</path>
-	<offsets>
-		<x-m>-0.571874</x-m>
-		<y-m>-0.367365</y-m>
-		<z-m>0.085083</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/rpm/rpm.xml</path>
+		<offsets>
+			<x-m>-0.571874</x-m>
+			<y-m>-0.367365</y-m>
+			<z-m>0.085083</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/vsi/vsi.xml</path>
-	<offsets>
-		<x-m>-0.572094</x-m>
-		<y-m>-0.277454</y-m>
-		<z-m>0.081152</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/vsi/vsi.xml</path>
+		<offsets>
+			<x-m>-0.572094</x-m>
+			<y-m>-0.277454</y-m>
+			<z-m>0.081152</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/ar-3201/ar-3201.xml</path>
-	<offsets>
-		<x-m>-0.57259</x-m>
-		<y-m>-0.187753</y-m>
-		<z-m>0.075985</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/ar-3201/ar-3201.xml</path>
+		<offsets>
+			<x-m>-0.57259</x-m>
+			<y-m>-0.187753</y-m>
+			<z-m>0.075985</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/fuel/fuel.xml</path>
-	<offsets>
-		<x-m>-0.511447</x-m>
-		<y-m>-0.020133</y-m>
-		<z-m>-0.026971</z-m>
-		<pitch-deg>-24.6</pitch-deg>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/fuel/fuel.xml</path>
+		<offsets>
+			<x-m>-0.511447</x-m>
+			<y-m>-0.020133</y-m>
+			<z-m>-0.026971</z-m>
+			<pitch-deg>-24.6</pitch-deg>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/switches/switches.xml</path>
-	<offsets>
-		<x-m>-0.543915</x-m>
-		<y-m>0</y-m>
-		<z-m>0.079265</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/switches/switches.xml</path>
+		<offsets>
+			<x-m>-0.543915</x-m>
+			<y-m>0</y-m>
+			<z-m>0.079265</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/ipad/ipad.xml</path>
-	<offsets>
-		<x-m>-0.52589</x-m>
-		<y-m>0</y-m>
-		<z-m>0.120622</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/ipad/ipad.xml</path>
+		<offsets>
+			<x-m>-0.52589</x-m>
+			<y-m>0</y-m>
+			<z-m>0.120622</z-m>
+		</offsets>
+	</model>
 
-<model>
-	<path>Aircraft/TL96/Models/Instruments/flydat/flydat.xml</path>
-	<offsets>
-		<x-m>-0.570155</x-m>
-		<y-m>0.271034</y-m>
-		<z-m>0.099274</z-m>
-	</offsets>
-</model>
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/flydat/flydat.xml</path>
+		<offsets>
+			<x-m>-0.570155</x-m>
+			<y-m>0.271034</y-m>
+			<z-m>0.099274</z-m>
+		</offsets>
+	</model>
 
 </PropertyList>
