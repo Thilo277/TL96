@@ -3,7 +3,7 @@
 <PropertyList>
 
   <path>alt.ac</path>
- 
+
   <animation>
     <object-name>ALTface</object-name>
     <object-name>needle100</object-name>
@@ -13,7 +13,7 @@
     <object-name>InhgKnob</object-name>
   </animation>
 
- 
+
   <animation>
     <type>rotate</type>
     <object-name>needle100</object-name>
@@ -55,8 +55,14 @@
     <object-name>inhg</object-name>
     <property>instrumentation/altimeter/setting-inhg</property>
     <interpolation>
-      <entry><ind> 31.0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 27.5 </ind><dep> 350 </dep></entry>
+      <entry>
+        <ind> 31.0 </ind>
+        <dep>   0 </dep>
+      </entry>
+      <entry>
+        <ind> 27.5 </ind>
+        <dep> 350 </dep>
+      </entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -74,10 +80,10 @@
       <interval-sec>0.1</interval-sec>
       <binding>
         <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step>  0.01 </step>
-        <min>  27.50 </min>
-        <max>  31.00 </max>
+        <property>instrumentation/altimeter/setting-hpa</property>
+        <step>  0.1 </step>
+        <min>  930 </min>
+        <max>  1050 </max>
         <wrap>  0.00 </wrap>
       </binding>
     </action>
@@ -92,10 +98,10 @@
       <interval-sec>0.1</interval-sec>
       <binding>
         <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step> -0.01 </step>
-        <min>  27.50 </min>
-        <max>  31.00 </max>
+        <property>instrumentation/altimeter/setting-hpa</property>
+        <step> -0.1 </step>
+        <min>  930 </min>
+        <max>  1050 </max>
         <wrap>  0.00 </wrap>
       </binding>
     </action>
@@ -108,21 +114,21 @@
       <button>3</button>
       <binding>
         <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step> 0.01 </step>
-        <min> 27.50 </min>
-        <max> 31.00 </max>
+        <property>instrumentation/altimeter/setting-hpa</property>
+        <step> 1 </step>
+        <min> 930 </min>
+        <max> 1050 </max>
         <wrap> 0.00 </wrap>
       </binding>
     </action>
- <hovered>
-            <binding>
-                <command>set-tooltip</command>
-                <tooltip-id>altimetyer</tooltip-id>
-                <label>setting-inhg: %g</label>
-                <property>instrumentation/altimeter/setting-inhg</property>
-            </binding>
-        </hovered>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>altimetyer</tooltip-id>
+        <label>setting-hpa: %g</label>
+        <property>instrumentation/altimeter/setting-hpa</property>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
@@ -132,10 +138,10 @@
       <button>4</button>
       <binding>
         <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step> -0.01 </step>
-        <min>  27.50 </min>
-        <max>  31.00 </max>
+        <property>instrumentation/altimeter/setting-hpa</property>
+        <step> -1 </step>
+        <min>  930 </min>
+        <max>  1050 </max>
         <wrap>  0.00  </wrap>
       </binding>
     </action>

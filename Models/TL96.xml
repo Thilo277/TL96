@@ -2,11 +2,11 @@
 
 <PropertyList>
 
-	<path>TL96.ac</path>
+    <path>TL96.ac</path>
 
     <model>
-    <path>Aircraft/TL96/Models/TL96-instruments.xml</path>
-    <!--<offsets>
+        <path>Aircraft/TL96/Models/TL96-instruments.xml</path>
+        <!--<offsets>
 		<x-m> 0.440 </x-m>
 		<y-m>-0.280 </y-m>
 		<z-m>-0.272 </z-m>
@@ -187,23 +187,23 @@
     <animation>
         <object-name>propdisk</object-name>
         <type>select</type>
-            <condition>
-                <greater-than>
+        <condition>
+            <greater-than>
                 <property>engines/engine[0]/rpm</property>
                 <value>600</value>
-                </greater-than>
-            </condition>
+            </greater-than>
+        </condition>
     </animation>
 
     <animation>
         <object-name>prop</object-name>
         <type>select</type>
-            <condition>
-                <less-than-equals>
+        <condition>
+            <less-than-equals>
                 <property>engines/engine[0]/rpm</property>
                 <value>600</value>
-                </less-than-equals>
-            </condition>
+            </less-than-equals>
+        </condition>
     </animation>
 
     <animation>
@@ -279,8 +279,8 @@
         <object-name>mainwindowframe</object-name>
         <condition>
             <equals>
-            <property>canopy/position-norm</property>
-            <value>0</value>
+                <property>canopy/position-norm</property>
+                <value>0</value>
             </equals>
         </condition>
         <action>
@@ -301,8 +301,8 @@
         <object-name>mainwindowframe</object-name>
         <condition>
             <equals>
-            <property>canopy/position-norm</property>
-            <value>1</value>
+                <property>canopy/position-norm</property>
+                <value>1</value>
             </equals>
         </condition>
         <action>
@@ -399,16 +399,16 @@
     <animation>
         <type>material</type>
         <object-name>fuellow</object-name>
-        <condition>	
-            <less-than-equals>		
-            <property>consumables/fuel/tank/level-gal_us</property>				
-            <value>4.55</value>	
+        <condition>
+            <less-than-equals>
+                <property>consumables/fuel/tank/level-gal_us</property>
+                <value>4.55</value>
             </less-than-equals>
         </condition>
         <emission>
-            <red>1</red>	
-            <green>0</green>	
-            <blue>0</blue>	
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
         </emission>
     </animation>
 
@@ -517,54 +517,54 @@
         </axis>
     </animation>
 
-<text>
-    <!-- It should have a name. Can be used for other animations -->
-    <name>callsign</name>
-    <!-- Use offsets for the initial placement -->
-    <offsets>
-        <pitch-deg>90</pitch-deg>
-        <heading-deg>0</heading-deg>
-        <roll-deg>90</roll-deg>
-        <x-m>-0.571865</x-m>
-        <y-m>-0.30222</y-m>
-        <z-m>0.242464</z-m>
-    </offsets>
+    <text>
+        <!-- It should have a name. Can be used for other animations -->
+        <name>callsign</name>
+        <!-- Use offsets for the initial placement -->
+        <offsets>
+            <pitch-deg>90</pitch-deg>
+            <heading-deg>0</heading-deg>
+            <roll-deg>90</roll-deg>
+            <x-m>-0.571865</x-m>
+            <y-m>-0.30222</y-m>
+            <z-m>0.242464</z-m>
+        </offsets>
 
 
-    <!-- The string value of a property -->
-    <type type="string">text-value</type>
-    <property type="string">sim/multiplay/callsign</property>
-    <format type="string">%s</format> <!-- the sprintf() format to display the value -->
- 
-    <layout>left-to-right</layout> <!-- default -->
-    <!--
+        <!-- The string value of a property -->
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/callsign</property>
+        <format type="string">%s</format> <!-- the sprintf() format to display the value -->
+
+        <layout>left-to-right</layout> <!-- default -->
+        <!--
     <layout>right-to-left</layout>
     <layout>vertical</layout>
     -->
-  
-    <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
-    <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
-    <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
- 
-    <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
-    <character-size type="double">0.015</character-size> <!-- size (height) im meters -->
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <max-height>0.017278</max-height> <!-- the maximum height of the text -->
-    <max-width>0.07305</max-width> <!-- the maximum width of the text -->
-    <font-resolution>
-        <width type="int">32</width>
-        <height type="int">32</height>
-    </font-resolution>
- 
-    <!-- chose one of the kerning types or omit for default -->
-    <kerning>default</kerning>
-    <!--
+
+        <draw-text type="bool">true</draw-text> <!-- draw the text itself -->
+        <draw-alignment type="bool">false</draw-alignment> <!-- draw crosshair at object center -->
+        <draw-boundingbox type="bool">false</draw-boundingbox> <!-- draw a bounding box -->
+
+        <font>Helvetica.txf</font> <!-- The font file name, relative to data/Fonts -->
+        <character-size type="double">0.015</character-size> <!-- size (height) im meters -->
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <max-height>0.017278</max-height> <!-- the maximum height of the text -->
+        <max-width>0.07305</max-width> <!-- the maximum width of the text -->
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+
+        <!-- chose one of the kerning types or omit for default -->
+        <kerning>default</kerning>
+        <!--
     <kerning>unfitted</kerning>
     <kerning>none</kerning>
     -->
- 
-    <alignment>center-center</alignment> <!-- alignment of the text itself -->
-    <!-- possible values are
+
+        <alignment>center-center</alignment> <!-- alignment of the text itself -->
+        <!-- possible values are
     <alignment>left-top</alignment>
     <alignment>left-center</alignment>
     <alignment>left-bottom</alignment>
@@ -579,18 +579,18 @@
     <alignment>right-baseline</alignment>
     <alignment>baseline</alignment>
     -->
- 
-</text>
 
-<animation>
-    <type>material</type>
-    <object-name>callsign</object-name>
+    </text>
+
+    <animation>
+        <type>material</type>
+        <object-name>callsign</object-name>
         <diffuse>
-        <red>0.0</red>
-        <green>0.0</green>
-        <blue>0.0</blue>
-    </diffuse>
-</animation>
+            <red>0.0</red>
+            <green>0.0</green>
+            <blue>0.0</blue>
+        </diffuse>
+    </animation>
 
     <animation>
         <type>pick</type>

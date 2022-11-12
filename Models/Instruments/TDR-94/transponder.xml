@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>transponder.ac</path>
+
+    <model>
+        <path>Aircraft/TL96/Models/Instruments/TDR-94/ctl92-transponder.xml</path>
+        <offsets>
+            <pitch-deg>-2.66837</pitch-deg>
+            <heading-deg>1.78319</heading-deg>
+            <roll-deg>-20.0271</roll-deg>
+            <x-m>-0.561803</x-m>
+            <y-m>0.17816</y-m>
+            <z-m>0.38337</z-m>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>aircraft/transponder/show</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+</PropertyList>

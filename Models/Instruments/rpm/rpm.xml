@@ -2,21 +2,27 @@
 
 <PropertyList>
 
-	<path>rpm.ac</path>
+  <path>rpm.ac</path>
 
-    <animation>
+  <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>engines/engine/rpm</property>
     <interpolation>
-      <entry><ind>0</ind><dep>0</dep></entry>
-      <entry><ind>8000</ind><dep>-240</dep></entry>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>8000</ind>
+        <dep>-240</dep>
+      </entry>
     </interpolation>
     <axis>
       <x> 1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-    </animation>
+  </animation>
 
 </PropertyList>
