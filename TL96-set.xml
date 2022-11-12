@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertyList>
+<PropertyList include="Aircraft/Generic/Human/Include/walker-include.xml">
     <sim>
         <description>TL96 Star</description>
 
@@ -34,6 +34,12 @@
             <livery>
                 <shininess>-0.9</shininess>
             </livery>
+            <map>
+                <default_exit>
+                    <x-offset-m type="float">-0.692497</x-offset-m>
+                    <y-offset-m type="float">-0.679567</y-offset-m>
+                </default_exit>
+            </map>
         </model>
 
         <view n="0">
