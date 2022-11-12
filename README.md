@@ -48,4 +48,7 @@ Some basic translation of the stickers, in the cockpit:
 7. Batterie ................. Aus
 
 
+# The Transponder can be de-/activated via the iPad
+
+
 # Note: you no longer need to press middle mouse button to turn off switches, except for the flaps lever
