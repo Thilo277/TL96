@@ -21,9 +21,7 @@ Some basic translation of the stickers, in the cockpit:
 17. Zündung L = Magneto Left;
 18. Zündung R = Magneto Right;
 
-
-
-# Basic startup procedure:
+# Basic startup procedure
 
 1. Fuel Tank ................ Full
 2. Parkbremse ............... Pulled
@@ -35,9 +33,7 @@ Some basic translation of the stickers, in the cockpit:
 8. iPad ..................... An
 9. Flaps .................... Runter (for takeoff)
 
-
-# Basic shutdown procedure:
-
+# Basic shutdown procedure
 
 1. Parkbremse ............... Pulled
 2. Klappen .................. Hoch
@@ -46,6 +42,5 @@ Some basic translation of the stickers, in the cockpit:
 5. Zündung L/R .............. Aus
 6. FlyDat ................... Aus
 7. Batterie ................. Aus
-
 
 # Note: you no longer need to press middle mouse button to turn off switches, except for the flaps lever
