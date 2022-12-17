@@ -10,7 +10,7 @@
 		<x-m> 0.440 </x-m>
 		<y-m>-0.280 </y-m>
 		<z-m>-0.272 </z-m>
-	</offsets>-->
+        </offsets>-->
     </model>
 
     <effect>
@@ -31,6 +31,12 @@
         <object-name>antenna</object-name>
     </effect>
 
+    <effect>
+        <inherits-from>Aircraft/TL96/Models/Effects/TL96_glass</inherits-from>
+        <object-name>mainwindow</object-name>
+        <object-name>rearwindow</object-name>
+    </effect>
+
 
     <animation>
         <object-name>elevator</object-name>
@@ -39,7 +45,7 @@
         <factor>20</factor>
         <center>
             <x-m>3.457</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m> 0.245</z-m>
         </center>
         <axis>
@@ -56,7 +62,7 @@
         <factor>20</factor>
         <center>
             <x-m>3.457</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m> 0.245</z-m>
         </center>
         <axis>
@@ -73,7 +79,7 @@
         <factor>20</factor>
         <center>
             <x-m>3.25334</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m>1.10989</z-m>
         </center>
         <axis>
@@ -90,7 +96,7 @@
         <factor>20</factor>
         <center>
             <x-m>-0.948273</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m>-0.244559</z-m>
         </center>
         <axis>
@@ -106,7 +112,7 @@
         <factor>20</factor>
         <center>
             <x-m>-0.948273</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m>-0.244559</z-m>
         </center>
         <axis>
@@ -157,7 +163,7 @@
         <factor>1</factor>
         <center>
             <x-m>-1.76376</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m>0.143847</z-m>
         </center>
         <axis>
@@ -174,7 +180,7 @@
         <factor>1</factor>
         <center>
             <x-m>-1.76052</x-m>
-            <y-m> 0   </y-m>
+            <y-m> 0 </y-m>
             <z-m>0.143847</z-m>
         </center>
         <axis>
@@ -213,7 +219,7 @@
         <factor>15</factor>
         <center>
             <x-m>-0.323934</x-m>
-            <y-m> -0.250006  </y-m>
+            <y-m> -0.250006 </y-m>
             <z-m>-0.299477 </z-m>
         </center>
         <axis>
@@ -230,7 +236,7 @@
         <factor>15</factor>
         <center>
             <x-m>-0.323934</x-m>
-            <y-m> 0.250006  </y-m>
+            <y-m> 0.250006 </y-m>
             <z-m>-0.299477 </z-m>
         </center>
         <axis>
@@ -247,7 +253,7 @@
         <factor>15</factor>
         <center>
             <x-m>-0.323934</x-m>
-            <y-m> -0.250006  </y-m>
+            <y-m> -0.250006 </y-m>
             <z-m>-0.299477 </z-m>
         </center>
         <axis>
@@ -264,7 +270,7 @@
         <factor>15</factor>
         <center>
             <x-m>-0.323934</x-m>
-            <y-m> 0.250006  </y-m>
+            <y-m> 0.250006 </y-m>
             <z-m>-0.299477 </z-m>
         </center>
         <axis>
@@ -566,17 +572,17 @@
         <alignment>center-center</alignment> <!-- alignment of the text itself -->
         <!-- possible values are
     <alignment>left-top</alignment>
-    <alignment>left-center</alignment>
+        <alignment>left-center</alignment>
     <alignment>left-bottom</alignment>
-    <alignment>center-top</alignment>
+        <alignment>center-top</alignment>
     <alignment>center-center</alignment>
-    <alignment>center-bottom</alignment>
+        <alignment>center-bottom</alignment>
     <alignment>right-top</alignment>
-    <alignment>right-center</alignment>
+        <alignment>right-center</alignment>
     <alignment>right-bottom</alignment>
-    <alignment>left-baseline</alignment>
+        <alignment>left-baseline</alignment>
     <alignment>center-baseline</alignment>
-    <alignment>right-baseline</alignment>
+        <alignment>right-baseline</alignment>
     <alignment>baseline</alignment>
     -->
 
