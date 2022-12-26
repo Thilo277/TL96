@@ -96,15 +96,6 @@
 
             </aerotow>
         </hitches>
-
-
-        <multiplay>
-            <generic>
-                <float n="0" alias="/canopy/position-norm" />
-                <int n="0" alias="/sim/multiplay/generic/int[0]" />
-            </generic>
-        </multiplay>
-
     </sim>
 
     <payload>
