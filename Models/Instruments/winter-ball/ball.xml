@@ -8,7 +8,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <factor>5.729</factor>
     <!--
    From the source for slip_skid_ball.cxx, the number returned is (-z_accel/y_accel)*10.

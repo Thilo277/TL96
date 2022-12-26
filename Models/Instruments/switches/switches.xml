@@ -202,7 +202,7 @@
             </binding>
             <binding>
                 <command>property-assign</command>
-                <property>controls/lighting/nav-lights</property>
+                <property>sim/multiplay/generic/int[0]</property>
                 <value>1</value>
             </binding>
         </action>
@@ -252,7 +252,7 @@
             </binding>
             <binding>
                 <command>property-assign</command>
-                <property>controls/lighting/nav-lights</property>
+                <property>sim/multiplay/generic/int[0]</property>
                 <value>0</value>
             </binding>
         </action>

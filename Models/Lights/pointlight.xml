@@ -9,7 +9,7 @@
     <path>sprite.ac</path>
     <condition>
       <not>
-        <property>/sim/rendering/shaders/skydome</property>
+        <property>sim/rendering/shaders/skydome</property>
       </not>
     </condition>
   </model>
@@ -20,14 +20,14 @@
     <object-name>sprite</object-name>
     <condition>
       <equals>
-          <property>controls/lighting/nav-lights2</property>
+          <property>sim/multiplay/generic/int[0]</property>
           <value>1</value>
       </equals>
   </condition>
   </animation>
 
   <params>
-    <power-source>/controls/lighting/nav-lights</power-source>
+    <power-source>sim/multiplay/generic/int[0]</power-source>
     <name>pointlight</name>
     <x-m>0</x-m>
     <y-m>0</y-m>
@@ -195,28 +195,28 @@
       <pointing_y alias="/params/direction/y" />
       <pointing_z alias="/params/direction/z" />
       <is_directional type="bool">false</is_directional>
-      <is_strobe type="bool">true</is_strobe>
+      <is_strobe type="bool">false</is_strobe>
       <inner_angle alias="/params/inner-angle" />
       <outer_angle alias="/params/outer-angle" />
       <zero_angle alias="/params/zero-angle" />
       <outer_gain alias="/params/outer-gain" />
       <visibility>
-        <use>/environment/ground-visibility-m</use>
+        <use>environment/ground-visibility-m</use>
       </visibility>
       <avisibility>
-        <use>/environment/visibility-m</use>
+        <use>environment/visibility-m</use>
       </avisibility>
       <lthickness>
-        <use>/environment/ground-haze-thickness-m</use>
+        <use>environment/ground-haze-thickness-m</use>
       </lthickness>
       <terrain_alt>
-        <use>/environment/mean-terrain-elevation-m</use>
+        <use>environment/mean-terrain-elevation-m</use>
       </terrain_alt>
       <eye_alt>
-        <use>/sim/rendering/eye-altitude-m</use>
+        <use>sim/rendering/eye-altitude-m</use>
       </eye_alt>
       <terminator>
-        <use>/environment/terminator-relative-position-m</use>
+        <use>environment/terminator-relative-position-m</use>
       </terminator>
     </parameters>
   </effect>

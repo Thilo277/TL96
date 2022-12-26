@@ -17,7 +17,7 @@
 			<red>1</red>
 			<green>1</green>
 			<blue>1</blue>
-			<factor-prop>/instrumentation/comm[0]/brightness</factor-prop>
+			<factor-prop>instrumentation/comm[0]/brightness</factor-prop>
 		</emission>
 	</animation>
 
@@ -37,7 +37,7 @@
 			<button>0</button>
 			<binding>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/mode-pressed</property>
+				<property>instrumentation/comm[0]/mode-pressed</property>
 				<value>1</value>
 			</binding>
 			<binding>
@@ -49,7 +49,7 @@
 			<mod-up>
 				<binding>
 					<command>property-assign</command>
-					<property>/instrumentation/comm[0]/mode-pressed</property>
+					<property>instrumentation/comm[0]/mode-pressed</property>
 					<value>0</value>
 				</binding>
 			</mod-up>
@@ -62,7 +62,7 @@
 			<button>0</button>
 			<binding>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/swap-scan-pressed</property>
+				<property>instrumentation/comm[0]/swap-scan-pressed</property>
 				<value>1</value>
 			</binding>
 			<binding>
@@ -74,7 +74,7 @@
 			<mod-up>
 				<binding>
 					<command>property-assign</command>
-					<property>/instrumentation/comm[0]/swap-scan-pressed</property>
+					<property>instrumentation/comm[0]/swap-scan-pressed</property>
 					<value>0</value>
 				</binding>
 			</mod-up>
@@ -83,7 +83,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>swap.scan</object-name>
-		<property>/instrumentation/comm[0]/swap-scan-pressed</property>
+		<property>instrumentation/comm[0]/swap-scan-pressed</property>
 		<axis>
 			<x>1</x>
 		</axis>
@@ -96,7 +96,7 @@
 			<button>0</button>
 			<binding>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/sql-ic-pressed</property>
+				<property>instrumentation/comm[0]/sql-ic-pressed</property>
 				<value>1</value>
 			</binding>
 			<binding>
@@ -108,7 +108,7 @@
 			<mod-up>
 				<binding>
 					<command>property-assign</command>
-					<property>/instrumentation/comm[0]/sql-ic-pressed</property>
+					<property>instrumentation/comm[0]/sql-ic-pressed</property>
 					<value>0</value>
 				</binding>
 			</mod-up>
@@ -117,7 +117,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>sql.ic</object-name>
-		<property>/instrumentation/comm[0]/sql-ic-pressed</property>
+		<property>instrumentation/comm[0]/sql-ic-pressed</property>
 		<axis>
 			<x>1</x>
 		</axis>
@@ -130,18 +130,18 @@
 			<button>0</button>
 			<binding>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/channel-menu</property>
+				<property>instrumentation/comm[0]/channel-menu</property>
 				<value>2</value>
 			</binding>
 			<binding>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/channel-menu-pressed</property>
+				<property>instrumentation/comm[0]/channel-menu-pressed</property>
 				<value>1</value>
 			</binding>
 			<mod-up>
 				<binding>
 					<command>property-assign</command>
-					<property>/instrumentation/comm[0]/channel-menu-pressed</property>
+					<property>instrumentation/comm[0]/channel-menu-pressed</property>
 					<value>0</value>
 				</binding>
 			</mod-up>
@@ -150,7 +150,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>store</object-name>
-		<property>/instrumentation/comm[0]/channel-menu-pressed</property>
+		<property>instrumentation/comm[0]/channel-menu-pressed</property>
 		<axis>
 			<x>1</x>
 		</axis>
@@ -165,12 +165,12 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>0</value>
 					</equals>
 				</condition>
 				<command>property-cycle</command>
-				<property>/instrumentation/comm[0]/current-change</property>
+				<property>instrumentation/comm[0]/current-change</property>
 				<value>1</value>
 				<value>2</value>
 				<value>3</value>
@@ -179,23 +179,23 @@
 			<binding>
 				<condition>
 					<not-equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>0</value>
 					</not-equals>
 				</condition>
 				<command>property-cycle</command>
-				<property>/instrumentation/comm[0]/pilot-menu</property>
+				<property>instrumentation/comm[0]/pilot-menu</property>
 				<value>1</value>
 				<value>2</value>
 			</binding>
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/channel-menu</property>
+						<property>instrumentation/comm[0]/channel-menu</property>
 						<value>1</value>
 					</equals>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>0</value>
 					</equals>
 				</condition>
@@ -206,11 +206,11 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/channel-menu</property>
+						<property>instrumentation/comm[0]/channel-menu</property>
 						<value>2</value>
 					</equals>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>0</value>
 					</equals>
 				</condition>
@@ -220,12 +220,12 @@
 			</binding>
 			<binding>
 				<command>property-toggle</command>
-				<property>/instrumentation/comm[0]/frq-knob-pushed</property>
+				<property>instrumentation/comm[0]/frq-knob-pushed</property>
 			</binding>
 			<mod-up>
 				<binding>
 					<command>property-toggle</command>
-					<property>/instrumentation/comm[0]/frq-knob-pushed</property>
+					<property>instrumentation/comm[0]/frq-knob-pushed</property>
 				</binding>
 			</mod-up>
 		</action>
@@ -234,18 +234,18 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>0</value>
 					</equals>
 				</condition>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/current-change</property>
+				<property>instrumentation/comm[0]/current-change</property>
 				<value>1</value>
 			</binding>
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>1</value>
 					</equals>
 				</condition>
@@ -261,7 +261,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>2</value>
 					</equals>
 				</condition>
@@ -277,7 +277,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>3</value>
 					</equals>
 				</condition>
@@ -293,7 +293,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>1</value>
 					</equals>
 				</condition>
@@ -307,7 +307,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>2</value>
 					</equals>
 				</condition>
@@ -321,7 +321,7 @@
 			<binding>
 				<condition>
 					<greater-than-equals>
-						<property>/instrumentation/comm[0]/channel-menu</property>
+						<property>instrumentation/comm[0]/channel-menu</property>
 						<value>1</value>
 					</greater-than-equals>
 				</condition>
@@ -343,18 +343,18 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>0</value>
 					</equals>
 				</condition>
 				<command>property-assign</command>
-				<property>/instrumentation/comm[0]/current-change</property>
+				<property>instrumentation/comm[0]/current-change</property>
 				<value>1</value>
 			</binding>
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>1</value>
 					</equals>
 				</condition>
@@ -370,7 +370,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>2</value>
 					</equals>
 				</condition>
@@ -386,7 +386,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/current-change</property>
+						<property>instrumentation/comm[0]/current-change</property>
 						<value>3</value>
 					</equals>
 				</condition>
@@ -402,7 +402,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>1</value>
 					</equals>
 				</condition>
@@ -416,7 +416,7 @@
 			<binding>
 				<condition>
 					<equals>
-						<property>/instrumentation/comm[0]/pilot-menu</property>
+						<property>instrumentation/comm[0]/pilot-menu</property>
 						<value>2</value>
 					</equals>
 				</condition>
@@ -430,7 +430,7 @@
 			<binding>
 				<condition>
 					<greater-than-equals>
-						<property>/instrumentation/comm[0]/channel-menu</property>
+						<property>instrumentation/comm[0]/channel-menu</property>
 						<value>1</value>
 					</greater-than-equals>
 				</condition>
@@ -491,7 +491,7 @@
 		<action>
 			<binding>
 				<command>property-adjust</command>
-				<property>/instrumentation/comm[0]/volume</property>
+				<property>instrumentation/comm[0]/volume</property>
 				<factor>0.05</factor>
 				<min>0</min>
 				<max>1</max>

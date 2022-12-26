@@ -101,7 +101,7 @@
         <multiplay>
             <generic>
                 <float n="0" alias="/canopy/position-norm" />
-                <float n="2" alias="/controls/lighting/nav-lights" />
+                <int n="0" alias="/sim/multiplay/generic/int[0]" />
             </generic>
         </multiplay>
 
@@ -129,9 +129,6 @@
     </nasal>
 
     <controls>
-        <lighting>
-            <nav-lights>0</nav-lights>
-        </lighting>
         <gear>
             <brake-parking>1</brake-parking>
         </gear>
