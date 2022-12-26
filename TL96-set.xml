@@ -117,6 +117,9 @@
         <ar6201>
             <file>Aircraft/TL96/Models/Instruments/ar-6201/ar6201.nas</file>
         </ar6201>
+        <startup>
+            <file>Aircraft/TL96/Nasal/startup.nas</file>
+        </startup>
     </nasal>
 
     <controls>
