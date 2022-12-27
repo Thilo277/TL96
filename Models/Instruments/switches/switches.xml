@@ -200,11 +200,6 @@
                 <property>systems/electrical/outputs/comm[0]</property>
                 <value>10</value>
             </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>sim/multiplay/generic/int[0]</property>
-                <value>1</value>
-            </binding>
         </action>
     </animation>
 
@@ -248,11 +243,6 @@
             <binding>
                 <command>property-assign</command>
                 <property>systems/electrical/outputs/comm[0]</property>
-                <value>0</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>sim/multiplay/generic/int[0]</property>
                 <value>0</value>
             </binding>
         </action>

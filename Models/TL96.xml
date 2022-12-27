@@ -3,25 +3,6 @@
 <PropertyList>
 
     <path>TL96.ac</path>
-
-    <model>
-        <path>Aircraft/TL96/Models/Lights/pointlight.xml</path>
-        <offsets>
-            <x-m>-0.11362</x-m>
-            <y-m>4.71361</y-m>
-            <z-m>0.190062</z-m>
-        </offsets>
-    </model>
-    
-    <model>
-        <path>Aircraft/TL96/Models/Lights/pointlight.xml</path>
-        <offsets>
-            <x-m>-0.11362</x-m>
-            <y-m>-4.71361</y-m>
-            <z-m>0.190062</z-m>
-        </offsets>
-    </model>
-
     <model>
         <path>Aircraft/TL96/Models/TL96-instruments.xml</path>
         <!--<offsets>

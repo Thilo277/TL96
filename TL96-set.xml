@@ -96,6 +96,24 @@
 
             </aerotow>
         </hitches>
+
+        <menubar>
+            <default>
+                <menu n="200">
+                    <label>TL96</label>
+                    <enabled type="bool">true</enabled>
+
+                    <item>
+                        <label>Autostart</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>startup.autostart()</script>
+                        </binding>
+                    </item>
+
+                </menu>
+            </default>
+        </menubar>
     </sim>
 
     <payload>
