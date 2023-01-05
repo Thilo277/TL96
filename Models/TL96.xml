@@ -12,6 +12,15 @@
         </offsets>-->
     </model>
 
+    <model>
+		<path>Effects/smoke/enginesmoke.xml</path>
+		<offsets>
+			<x-m>0.208324</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.358396</z-m>
+		</offsets>
+	</model>
+
     <effect>
         <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
         <object-name>elevator</object-name>
