@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>chute.ac</path>
+
+    <effect>
+        <inherits-from>Aircraft/TL96/Models/Effects/chute</inherits-from>
+        <object-name>chute</object-name>
+    </effect>
+
+    <animation>
+        <object-name>chute</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>controls/flight/slats</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+</PropertyList>

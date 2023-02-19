@@ -195,4 +195,14 @@
         </transponder>
     </instrumentation>
 
+    <fdm>
+        <jsbsim>
+            <external_reactions>
+                <chute>
+                    <magnitude>0</magnitude>
+                </chute>
+            </external_reactions>
+        </jsbsim>
+    </fdm>
+
 </PropertyList>

@@ -40,23 +40,23 @@
 -->
 
   <metrics>
-    <wingarea unit="FT2">  130.26 </wingarea>
-    <wingspan unit="FT">   31.50 </wingspan>
-    <wing_incidence>          2.00 </wing_incidence>
-    <chord unit="FT">    4.14 </chord>
-    <htailarea unit="FT2">   20.84 </htailarea>
-    <htailarm unit="FT">   11.09 </htailarm>
-    <vtailarea unit="FT2">   13.03 </vtailarea>
-    <vtailarm unit="FT">   10.66 </vtailarm>
+    <wingarea unit="FT2"> 130.26 </wingarea>
+    <wingspan unit="FT"> 31.50 </wingspan>
+    <wing_incidence> 2.00 </wing_incidence>
+    <chord unit="FT"> 4.14 </chord>
+    <htailarea unit="FT2"> 20.84 </htailarea>
+    <htailarm unit="FT"> 11.09 </htailarm>
+    <vtailarea unit="FT2"> 13.03 </vtailarea>
+    <vtailarm unit="FT"> 10.66 </vtailarm>
     <location name="AERORP" unit="IN">
       <x> 0.00 </x>
-      <y>   0.00 </y>
-      <z>   0.00 </z>
+      <y> 0.00 </y>
+      <z> 0.00 </z>
     </location>
     <location name="EYEPOINT" unit="IN">
-      <x>  -6.119 </x>
+      <x> -6.119 </x>
       <y> 0 </y>
-      <z>  16.13 </z>
+      <z> 16.13 </z>
     </location>
     <location name="VRP" unit="IN">
       <x>0</x>
@@ -66,29 +66,29 @@
   </metrics>
 
   <mass_balance>
-    <ixx unit="SLUG*FT2">       370 </ixx>
-    <iyy unit="SLUG*FT2">       302 </iyy>
-    <izz unit="SLUG*FT2">       630 </izz>
-    <emptywt unit="LBS">       659 </emptywt>
+    <ixx unit="SLUG*FT2"> 370 </ixx>
+    <iyy unit="SLUG*FT2"> 302 </iyy>
+    <izz unit="SLUG*FT2"> 630 </izz>
+    <emptywt unit="LBS"> 659 </emptywt>
     <location name="CG" unit="IN">
       <x> 0.00 </x>
-      <y>   0.00 </y>
-      <z>  0.00 </z>
+      <y> 0.00 </y>
+      <z> 0.00 </z>
     </location>
     <pointmass name="Pilot">
-      <weight unit="LBS">     150 </weight>
+      <weight unit="LBS"> 150 </weight>
       <location name="POINTMASS" unit="IN">
         <x>7.87402</x>
         <y>-9.44882</y>
-        <z>  -12.21</z>
+        <z> -12.21</z>
       </location>
     </pointmass>
     <pointmass name="Copilot">
-      <weight unit="LBS">     150 </weight>
+      <weight unit="LBS"> 150 </weight>
       <location name="POINTMASS" unit="IN">
         <x>7.87402</x>
         <y>9.44882</y>
-        <z>  -12.21</z>
+        <z> -12.21</z>
       </location>
     </pointmass>
   </mass_balance>
@@ -97,15 +97,15 @@
 
     <contact type="BOGEY" name="fronttire">
       <location unit="IN">
-        <x>  -41.15 </x>
+        <x> -41.15 </x>
         <y> 0 </y>
         <z> -43.00 </z>
       </location>
-      <static_friction>  0.80 </static_friction>
+      <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">        992.25 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   496.12 </damping_coeff>
+      <spring_coeff unit="LBS/FT"> 992.25 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 496.12 </damping_coeff>
       <max_steer unit="DEG"> 80 </max_steer>
       <brake_group>NONE</brake_group>
       <retractable>0</retractable>
@@ -117,11 +117,11 @@
         <y> -38.88 </y>
         <z> -43.00 </z>
       </location>
-      <static_friction>  0.80 </static_friction>
+      <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">        992.25 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   496.12 </damping_coeff>
+      <spring_coeff unit="LBS/FT"> 992.25 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 496.12 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>LEFT</brake_group>
       <retractable>0</retractable>
@@ -133,11 +133,11 @@
         <y> 38.88 </y>
         <z> -43.00 </z>
       </location>
-      <static_friction>  0.80 </static_friction>
+      <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">        992.25 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   496.12 </damping_coeff>
+      <spring_coeff unit="LBS/FT"> 992.25 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 496.12 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
       <retractable>0</retractable>
@@ -147,24 +147,25 @@
       <location unit="IN">
         <x> 1.9332 </x>
         <y> -90.039 </y>
-        <z>  0 </z>
+        <z> 0 </z>
       </location>
-      <static_friction>  1.00 </static_friction>
+      <static_friction> 1.00 </static_friction>
       <dynamic_friction> 1.00 </dynamic_friction>
-      <spring_coeff unit="LBS/FT">        992.25 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   992.25 </damping_coeff>
+      <spring_coeff unit="LBS/FT"> 992.25 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 992.25 </damping_coeff>
     </contact>
 
-    <contact type="STRUCTURE" name="rwing">
+    <contact
+      type="STRUCTURE" name="rwing">
       <location unit="IN">
         <x> 1.9332 </x>
         <y> 90.039 </y>
-        <z>  0 </z>
+        <z> 0 </z>
       </location>
-      <static_friction>  1.00 </static_friction>
+      <static_friction> 1.00 </static_friction>
       <dynamic_friction> 1.00 </dynamic_friction>
-      <spring_coeff unit="LBS/FT">        992.25 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   992.25 </damping_coeff>
+      <spring_coeff unit="LBS/FT"> 992.25 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 992.25 </damping_coeff>
     </contact>
 
   </ground_reactions>
@@ -173,27 +174,27 @@
 
     <engine file="ROTAX915IS">
       <location unit="IN">
-        <x>  -53.39 </x>
-        <y>   0.00 </y>
-        <z>   2.61 </z>
+        <x> -53.39 </x>
+        <y> 0.00 </y>
+        <z> 2.61 </z>
       </location>
       <orient unit="DEG">
         <pitch> 0.00 </pitch>
-        <roll>  0.00 </roll>
-        <yaw>   0.00 </yaw>
+        <roll> 0.00 </roll>
+        <yaw> 0.00 </yaw>
       </orient>
       <feed>0</feed>
       <thruster file="prop">
         <sense> 1 </sense>
         <location unit="IN">
-          <x>  -69.58 </x>
-          <y>   0.00 </y>
-          <z>   5.66 </z>
+          <x> -69.58 </x>
+          <y> 0.00 </y>
+          <z> 5.66 </z>
         </location>
         <orient unit="DEG">
           <pitch> 0.00 </pitch>
-          <roll>  0.00 </roll>
-          <yaw>   0.00 </yaw>
+          <roll> 0.00 </roll>
+          <yaw> 0.00 </yaw>
         </orient>
       </thruster>
     </engine>
@@ -201,11 +202,11 @@
     <tank type="FUEL" number="0">
       <location unit="IN">
         <x> 4.50 </x>
-        <y>   0 </y>
-        <z>  -2.12 </z>
+        <y> 0 </y>
+        <z> -2.12 </z>
       </location>
-      <capacity unit="LBS">  120.00 </capacity>
-      <contents unit="LBS">  5.00 </contents>
+      <capacity unit="LBS"> 120.00 </capacity>
+      <contents unit="LBS"> 5.00 </contents>
     </tank>
 
   </propulsion>
@@ -219,7 +220,7 @@
         <input>fcs/pitch-trim-cmd-norm</input>
         <clipto>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </clipto>
       </summer>
 
@@ -227,7 +228,7 @@
         <input>fcs/pitch-trim-sum</input>
         <range>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </range>
         <output>fcs/elevator-pos-rad</output>
       </aerosurface_scale>
@@ -236,11 +237,11 @@
         <input>fcs/elevator-pos-rad</input>
         <domain>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </domain>
         <range>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </range>
         <output>fcs/elevator-pos-norm</output>
       </aerosurface_scale>
@@ -254,7 +255,7 @@
         <input>fcs/roll-trim-cmd-norm</input>
         <clipto>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </clipto>
       </summer>
 
@@ -262,7 +263,7 @@
         <input>fcs/roll-trim-sum</input>
         <range>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </range>
         <output>fcs/left-aileron-pos-rad</output>
       </aerosurface_scale>
@@ -271,7 +272,7 @@
         <input>fcs/roll-trim-sum</input>
         <range>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </range>
         <output>fcs/right-aileron-pos-rad</output>
       </aerosurface_scale>
@@ -280,11 +281,11 @@
         <input>fcs/left-aileron-pos-rad</input>
         <domain>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </domain>
         <range>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </range>
         <output>fcs/left-aileron-pos-norm</output>
       </aerosurface_scale>
@@ -293,11 +294,11 @@
         <input>fcs/right-aileron-pos-rad</input>
         <domain>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </domain>
         <range>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </range>
         <output>fcs/right-aileron-pos-norm</output>
       </aerosurface_scale>
@@ -311,7 +312,7 @@
         <input>fcs/yaw-trim-cmd-norm</input>
         <clipto>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </clipto>
       </summer>
 
@@ -319,7 +320,7 @@
         <input>fcs/rudder-command-sum</input>
         <range>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </range>
         <output>fcs/rudder-pos-rad</output>
       </aerosurface_scale>
@@ -328,11 +329,11 @@
         <input>fcs/rudder-pos-rad</input>
         <domain>
           <min> -0.35 </min>
-          <max>  0.35 </max>
+          <max> 0.35 </max>
         </domain>
         <range>
           <min> -1 </min>
-          <max>  1 </max>
+          <max> 1 </max>
         </range>
         <output>fcs/rudder-pos-norm</output>
       </aerosurface_scale>
@@ -344,16 +345,16 @@
         <input>fcs/flap-cmd-norm</input>
         <traverse>
           <setting>
-            <position>  0 </position>
-            <time>      0 </time>
+            <position> 0 </position>
+            <time> 0 </time>
           </setting>
           <setting>
             <position> 15 </position>
-            <time>      4 </time>
+            <time> 4 </time>
           </setting>
           <setting>
             <position> 30 </position>
-            <time>      3 </time>
+            <time> 3 </time>
           </setting>
         </traverse>
         <output>fcs/flap-pos-deg</output>
@@ -362,7 +363,7 @@
       <aerosurface_scale name="flap normalization">
         <input>fcs/flap-pos-deg</input>
         <domain>
-          <min>  0 </min>
+          <min> 0 </min>
           <max> 30 </max>
         </domain>
         <range>
@@ -382,11 +383,11 @@
         <traverse>
           <setting>
             <position> 0 </position>
-            <time>     0 </time>
+            <time> 0 </time>
           </setting>
           <setting>
             <position> 1 </position>
-            <time>     1 </time>
+            <time> 1 </time>
           </setting>
         </traverse>
         <output>fcs/speedbrake-pos-norm</output>
@@ -729,5 +730,23 @@
     </axis>
 
   </aerodynamics>
+
+
+  <external_reactions>
+
+    <force name="chute" frame="LOCAL">
+      <location unit="M">
+        <x>1.25846</x>
+        <y>0</y>
+        <z>0.444573</z>
+      </location>
+      <direction>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </direction>
+    </force>
+
+  </external_reactions>
 
 </fdm_config>

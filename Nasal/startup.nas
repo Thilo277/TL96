@@ -40,8 +40,8 @@ print("########################## Having problems? Contact me via mail on: thilo
 print("##################################################################################################################");
 print("##################################################### Enjoy! #####################################################");
 print("##################################################################################################################");
-print("Pulling Aircraft from: ", getprop("/sim/aircraft-dir"));
-print("Callsign set to: ", getprop("/sim/multiplay/callsign"));
+print("Pulling Aircraft from: ", getprop("sim/aircraft-dir"));
+print("Callsign set to: ", getprop("sim/multiplay/callsign"));
 print("##################################################################################################################");
 print("");
 
@@ -77,5 +77,25 @@ var autostart = func {
 
     if (getprop("engines/engine/rpm") < 800) settimer(autostart,0);
     settimer(throttle, 2);
+}
+
+
+var chute = func {
+    if (getprop("position/altitude-agl-ft") > 5)
+    {
+        var a = getprop("fdm/jsbsim/inertia/weight-lbs") - 10;
+        setprop("fdm/jsbsim/external_reactions/chute/magnitude", a);
+        setprop("controls/flight/elevator-trim", 1);
+        setprop("controls/flight/slats", 1);
+        settimer(chute, 0.1);
+    }
+    else 
+    {
+        setprop("fdm/jsbsim/external_reactions/chute/magnitude", 0);
+        setprop("controls/flight/slats", 0);
+        setprop("fdm/jsbsim/simulation/terminate", 1);
+        setprop("canopy/position-norm", 1);
+    }
+    
 }
 

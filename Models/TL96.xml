@@ -13,13 +13,23 @@
     </model>
 
     <model>
-		<path>Effects/smoke/enginesmoke.xml</path>
-		<offsets>
-			<x-m>0.208324</x-m>
-			<y-m>0</y-m>
-			<z-m>-0.358396</z-m>
-		</offsets>
-	</model>
+        <path>Effects/smoke/enginesmoke.xml</path>
+        <offsets>
+            <x-m>0.208324</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.358396</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/TL96/Models/chute.xml</path>
+        <offsets>
+            <x-m>3.51967</x-m>
+            <y-m>0</y-m>
+            <z-m>0.152627</z-m>
+            <pitch-deg>90</pitch-deg>
+        </offsets>
+    </model>
 
     <effect>
         <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
@@ -38,6 +48,8 @@
         <object-name>rwing</object-name>
         <object-name>antenna</object-name>
         <object-name>propholder</object-name>
+        <object-name>ribbon</object-name>
+        <object-name>bolts</object-name>
     </effect>
 
     <effect>
@@ -132,14 +144,31 @@
     </animation>
 
     <animation>
-        <object-name>Lrudder</object-name>
+        <object-name>RrudderL</object-name>
         <type>rotate</type>
         <property>surface-positions/rudder-pos-norm</property>
         <factor>20</factor>
         <center>
             <x-m>-0.82694</x-m>
-            <y-m>-0.02793</y-m>
-            <z-m>-0.309725</z-m>
+            <y-m>0</y-m>
+            <z-m>-0.316165</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>LrudderR</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.82694</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.316165</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -149,14 +178,31 @@
     </animation>
 
     <animation>
-        <object-name>Rrudder</object-name>
+        <object-name>LrudderL</object-name>
         <type>rotate</type>
         <property>surface-positions/rudder-pos-norm</property>
         <factor>20</factor>
         <center>
             <x-m>-0.82694</x-m>
-            <y-m>0.02793</y-m>
-            <z-m>-0.309725</z-m>
+            <y-m>0</y-m>
+            <z-m>-0.266393</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>RrudderR</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <center>
+            <x-m>-0.82694</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.266393</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -349,6 +395,38 @@
             <y>-1</y>
             <z>0</z>
         </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>emergencylever</object-name>
+        <condition>
+            <greater-than>
+                <property>position/altitude-agl-ft</property>
+                <value>50</value>
+            </greater-than>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <interval-sec>0</interval-sec>
+            <binding>
+                <command>nasal</command>
+                <script>startup.chute()</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <object-name>emergencysafe</object-name>
+        <object-name>removebeforeflight</object-name>
+        <type>select</type>
+        <condition>
+            <less-than>
+                <property>position/altitude-agl-ft</property>
+                <value>50</value>
+            </less-than>
+        </condition>
     </animation>
 
     <animation>
