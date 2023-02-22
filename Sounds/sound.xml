@@ -59,5 +59,42 @@
         </equals>
       </condition>
     </coughing2>
+
+
+    <left>
+      <name>left</name>
+      <path>Aircraft/TL96/Sounds/touchdown.wav</path>
+      <mode>once</mode>
+      <condition>
+        <property>gear/gear[0]/wow</property>
+      </condition>
+    </left>
+
+    <right>
+      <name>right</name>
+      <path>Aircraft/TL96/Sounds/touchdown.wav</path>
+      <mode>once</mode>
+      <condition>
+        <property>gear/gear[1]/wow</property>
+      </condition>
+    </right>
+
+    <front>
+      <name>front</name>
+      <path>Aircraft/TL96/Sounds/touchdown.wav</path>
+      <mode>once</mode>
+      <condition>
+        <property>gear/gear[2]/wow</property>
+      </condition>
+    </front>
+
+    <chute>
+      <name>chute</name>
+      <path>Aircraft/TL96/Sounds/chute.wav</path>
+      <mode>once</mode>
+      <condition>
+        <property>controls/flight/slats</property>
+      </condition>
+    </chute>
   </fx>
 </PropertyList>

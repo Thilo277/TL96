@@ -151,7 +151,7 @@
         <center>
             <x-m>-0.82694</x-m>
             <y-m>0</y-m>
-            <z-m>-0.316165</z-m>
+            <z-m>-0.255956</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -168,7 +168,7 @@
         <center>
             <x-m>-0.82694</x-m>
             <y-m>0</y-m>
-            <z-m>-0.316165</z-m>
+            <z-m>-0.255956</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -183,9 +183,9 @@
         <property>surface-positions/rudder-pos-norm</property>
         <factor>20</factor>
         <center>
-            <x-m>-0.82694</x-m>
+            <x-m>-0.808604</x-m>
             <y-m>0</y-m>
-            <z-m>-0.266393</z-m>
+            <z-m>-0.255956</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -200,9 +200,9 @@
         <property>surface-positions/rudder-pos-norm</property>
         <factor>20</factor>
         <center>
-            <x-m>-0.82694</x-m>
+            <x-m>-0.808604</x-m>
             <y-m>0</y-m>
-            <z-m>-0.266393</z-m>
+            <z-m>-0.255956</z-m>
         </center>
         <axis>
             <x>0</x>

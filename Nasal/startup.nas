@@ -81,13 +81,22 @@ var autostart = func {
 
 
 var chute = func {
+    chuteloop();
+    setprop("sim/multiplay/chat", getprop("sim/multiplay/callsign") ~ " (" ~ getprop("sim/description") ~ ")" ~ " Ballistic Recovery System activated at " ~ getprop("position/latitude-string") ~ " " ~ getprop("position/longitude-string") ~ " Altitude: " ~ getprop("position/altitude-agl-ft") ~ " ft (" ~ getprop("position/altitude-agl-m") ~ " m)");
+    print(getprop("sim/multiplay/callsign") ~ " (" ~ getprop("sim/description") ~ ")" ~ " Ballistic Recovery System activated at " ~ getprop("position/latitude-string") ~ " " ~ getprop("position/longitude-string") ~ " Altitude: " ~ getprop("position/altitude-agl-ft") ~ " ft (" ~ getprop("position/altitude-agl-m") ~ " m)");
+}
+
+var chuteloop = func {
     if (getprop("position/altitude-agl-ft") > 5)
     {
         var a = getprop("fdm/jsbsim/inertia/weight-lbs") - 10;
         setprop("fdm/jsbsim/external_reactions/chute/magnitude", a);
         setprop("controls/flight/elevator-trim", 1);
         setprop("controls/flight/slats", 1);
-        settimer(chute, 0.1);
+        setprop("aircraft/ipad/ison", 1);
+        setprop("aircraft/ipad/error", 0);
+        setprop("aircraft/ipad/screen", 4);
+        settimer(chuteloop, 0.1);
     }
     else 
     {
@@ -95,7 +104,8 @@ var chute = func {
         setprop("controls/flight/slats", 0);
         setprop("fdm/jsbsim/simulation/terminate", 1);
         setprop("canopy/position-norm", 1);
+        setprop("sim/multiplay/chat", getprop("sim/multiplay/callsign") ~ " (" ~ getprop("sim/description") ~ ")" ~ " landet at " ~ getprop("position/latitude-string") ~ " " ~ getprop("position/longitude-string") ~ " after Ballistic Recovery System activation, no injuries.");
+        print(getprop("sim/multiplay/callsign") ~ " (" ~ getprop("sim/description") ~ ")" ~ " landet at " ~ getprop("position/latitude-string") ~ " " ~ getprop("position/longitude-string") ~ " after Ballistic Recovery System activation, no injuries.");
     }
-    
 }
 
