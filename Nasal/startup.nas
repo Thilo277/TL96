@@ -42,8 +42,32 @@ print("##################################################### Enjoy! ############
 print("##################################################################################################################");
 print("Pulling Aircraft from: ", getprop("sim/aircraft-dir"));
 print("Callsign set to: ", getprop("sim/multiplay/callsign"));
+
+if(getprop("aircraft/time/hobbssec") == nil) {
+    print("set Motor hours to 0");
+    setprop("aircraft/time/hobbssec", 0);
+}
+
+setprop("aircraft/time/hobbshour", (getprop("aircraft/time/hobbssec")/60)/60);
+print("Motor Hours: ~ ", math.round(getprop("aircraft/time/hobbshour"), 1));
 print("##################################################################################################################");
 print("");
+var hobbsmeter = func {
+    if(getprop("engines/engine/running")){
+        # print("Time started");
+        var time = getprop("aircraft/time/hobbssec");
+        time = time + 1;
+        setprop("aircraft/time/hobbssec", time);
+        setprop("aircraft/time/hobbshour", (time/60)/60);
+        settimer(hobbsmeter, 1);
+    }
+    else {
+        settimer(hobbsmeter, 1);
+    }
+}
+
+settimer(hobbsmeter, 1);
+
 
 
 var throttle = func {

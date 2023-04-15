@@ -114,6 +114,10 @@
                 </menu>
             </default>
         </menubar>
+
+        <aircraft-data>
+            <path>aircraft/time/hobbssec</path>
+        </aircraft-data>
     </sim>
 
     <payload>

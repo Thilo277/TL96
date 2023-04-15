@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Adapted from the Diamond-da40 -->
+
+<PropertyList>
+
+    <path>hobbs.ac</path>
+
+    <animation>
+        <object-name>Base</object-name>
+        <object-name>Drum.0</object-name>
+        <object-name>Drum.1</object-name>
+        <object-name>Drum.2</object-name>
+        <object-name>Drum.3</object-name>
+        <object-name>Drum.4</object-name>
+    </animation>
+
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Drum.0</object-name>
+        <property>aircraft/time/hobbshour</property>
+        <factor>1</factor>
+        <step>0.00001</step>
+        <axis>
+            <x>  0 </x>
+            <y> -1 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Drum.1</object-name>
+        <property>aircraft/time/hobbshour</property>
+        <factor>0.1</factor>
+        <step>0.0001</step>
+        <axis>
+            <x>  0 </x>
+            <y> -1 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Drum.2</object-name>
+        <property>aircraft/time/hobbshour</property>
+        <factor>0.01</factor>
+        <step>0.001</step>
+        <axis>
+            <x>  0 </x>
+            <y> -1 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Drum.3</object-name>
+        <property>aircraft/time/hobbshour</property>
+        <factor>0.001</factor>
+        <step>0.01</step>
+        <axis>
+            <x>  0 </x>
+            <y> -1 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Drum.4</object-name>
+        <property>aircraft/time/hobbshour</property>
+        <factor>0.0001</factor>
+        <step>0.1</step>
+        <axis>
+            <x>  0 </x>
+            <y> -1 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+
+</PropertyList>

@@ -121,4 +121,13 @@
 		</offsets>
 	</model>
 
+	<model>
+		<path>Aircraft/TL96/Models/Instruments/hobbs/hobbs.xml</path>
+		<offsets>
+			<x-m>-0.572345</x-m>
+			<y-m>0.250686</y-m>
+			<z-m>0.202614</z-m>
+		</offsets>
+	</model>
+
 </PropertyList>
