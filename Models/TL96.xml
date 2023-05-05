@@ -58,6 +58,12 @@
         <object-name>rearwindow</object-name>
     </effect>
 
+    <effect>
+        <inherits-from>Effects/glass</inherits-from>
+        <object-name>rainfront</object-name>
+        <object-name>rainrear</object-name>
+    </effect>
+
 
     <animation>
         <object-name>elevator</object-name>
@@ -380,6 +386,7 @@
     </animation>
 
     <animation>
+        <object-name>rainfront</object-name>
         <object-name>mainwindowframe</object-name>
         <object-name>mainwindow</object-name>
         <type>rotate</type>
