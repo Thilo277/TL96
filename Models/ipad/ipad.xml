@@ -7,6 +7,7 @@
     <animation>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -257,6 +258,7 @@
 
     <animation>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <type>select</type>
         <condition>
             <equals>
@@ -352,7 +354,8 @@
         </condition>
     </animation>
 
-    <!--information board-->
+    <!--information
+    board-->
 
     <text>
         <!-- It should have a name. Can be used for other animations -->
@@ -1210,7 +1213,8 @@
 
     </text>
 
-    <!--checklist items-->
+    <!--checklist
+    items-->
     <!--___________________________________________________________________________________________________________________________-->
     <text>
         <!-- It should have a name. Can be used for other animations -->
@@ -2047,10 +2051,12 @@
     </animation>
 
 
-    <!--end of checklist items-->
+    <!--end
+    of checklist items-->
     <!--___________________________________________________________________________________________________________________________-->
 
-    <!--shutdown checklist items-->
+    <!--shutdown
+    checklist items-->
     <!--___________________________________________________________________________________________________________________________-->
     <text>
         <!-- It should have a name. Can be used for other animations -->
@@ -2699,7 +2705,8 @@
     </animation>
 
 
-    <!--end of shutdown checklist items-->
+    <!--end
+    of shutdown checklist items-->
     <!--___________________________________________________________________________________________________________________________-->
 
 
@@ -2782,6 +2789,7 @@
         <type>translate</type>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -2847,6 +2855,7 @@
         <type>translate</type>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -2912,6 +2921,7 @@
         <type>translate</type>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -2976,6 +2986,7 @@
     <animation>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -3046,6 +3057,7 @@
     <animation>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
         <object-name>checklists</object-name>
         <object-name>welcome</object-name>
         <object-name>checklistscreen</object-name>
@@ -3125,6 +3137,24 @@
                 <value>false</value>
             </binding>
         </action>
+    </animation>
+
+    <animation>
+        <object-name>heading</object-name>
+        <type>rotate</type>
+        <property>orientation/heading-deg</property>
+        <factor>1</factor>
+        <offset-deg>0</offset-deg>
+        <center>
+            <x-m>0.006402</x-m>
+            <y-m> 0 </y-m>
+            <z-m> 0.118504</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
     </animation>
 
 </PropertyList>

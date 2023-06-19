@@ -142,6 +142,9 @@
         <startup>
             <file>Aircraft/TL96/Nasal/startup.nas</file>
         </startup>
+        <canvas_map>
+            <file>Aircraft/TL96/Models/ipad/canvas_map.nas</file>
+        </canvas_map>
     </nasal>
 
     <controls>
@@ -160,6 +163,7 @@
     <aircraft>
         <ipad>
             <ison>0</ison>
+            <airac type="string">2306</airac>
         </ipad>
         <flydat>
             <ison>0</ison>
