@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>autopilot.ac</path>
+
+    <animation>
+        <type>pick</type>
+        <object-name>roll</object-name>
+        <condition>
+            <equals>
+                <property>autopilot/locks/heading</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>autopilot/locks/heading</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>roll</object-name>
+        <condition>
+            <equals>
+                <property>autopilot/locks/heading</property>
+                <value>1</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>autopilot/locks/heading</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+<animation>
+        <type>pick</type>
+        <object-name>pitch</object-name>
+        <condition>
+            <equals>
+                <property>autopilot/locks/altitude</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>autopilot/locks/altitude</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>pitch</object-name>
+        <condition>
+            <equals>
+                <property>autopilot/locks/altitude</property>
+                <value>1</value>
+            </equals>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>autopilot/locks/altitude</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>up2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-pitch-deg</property>
+                <step>3</step>
+                <min>-3</min>
+                <max>3</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>down</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-pitch-deg</property>
+                <step>-3</step>
+                <min>-3</min>
+                <max>3</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>left</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-roll-deg</property>
+                <step>-15</step>
+                <min>-15</min>
+                <max>15</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>right</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-roll-deg</property>
+                <step>15</step>
+                <min>-15</min>
+                <max>15</max>
+            </binding>
+        </action>
+    </animation>
+    
+
+    <animation>
+        <object-name>roll</object-name>
+        <type>rotate</type>
+        <property>autopilot/locks/heading</property>
+        <factor>-60</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>pitch</object-name>
+        <type>rotate</type>
+        <property>autopilot/locks/altitude</property>
+        <factor>-60</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

@@ -178,7 +178,8 @@
         <output>aircraft/ipad/drop-current</output>
     </filter>
 
-    <!--iPad information board-->
+    <!--iPad
+    information board-->
 
     <filter>
         <type>gain</type>
@@ -223,9 +224,10 @@
     </filter>
 
 
-<!--Glass rain-->
+    <!--Glass
+    rain-->
 
-<filter>
+    <filter>
         <name>splash-xa</name>
         <update-interval-secs type="double">0.01</update-interval-secs>
         <type>gain</type>
@@ -234,8 +236,14 @@
             <expression>
                 <table>
                     <property>velocities/airspeed-kt</property>
-                    <entry><ind>  0</ind><dep> -1.5 </dep></entry>
-                    <entry><ind>100</ind><dep> -3.0 </dep></entry>
+                    <entry>
+                        <ind> 0</ind>
+                        <dep> -1.5 </dep>
+                    </entry>
+                    <entry>
+                        <ind>100</ind>
+                        <dep> -3.0 </dep>
+                    </entry>
                 </table>
             </expression>
         </input>
@@ -253,8 +261,14 @@
             <expression>
                 <table>
                     <property>velocities/airspeed-kt</property>
-                    <entry><ind>  0</ind><dep> 1.0 </dep></entry>
-                    <entry><ind>100</ind><dep> 1.0 </dep></entry>
+                    <entry>
+                        <ind> 0</ind>
+                        <dep> 1.0 </dep>
+                    </entry>
+                    <entry>
+                        <ind>100</ind>
+                        <dep> 1.0 </dep>
+                    </entry>
                 </table>
             </expression>
         </input>
@@ -272,9 +286,18 @@
             <expression>
                 <table>
                     <property>engines/engine[0]/rpm</property>
-                    <entry><ind>    0 </ind><dep> 0.1 </dep></entry>
-                    <entry><ind> 948 </ind><dep> 1.0 </dep></entry>
-                    <entry><ind> 6000 </ind><dep> 2.0 </dep></entry>
+                    <entry>
+                        <ind> 0 </ind>
+                        <dep> 0.1 </dep>
+                    </entry>
+                    <entry>
+                        <ind> 948 </ind>
+                        <dep> 1.0 </dep>
+                    </entry>
+                    <entry>
+                        <ind> 6000 </ind>
+                        <dep> 2.0 </dep>
+                    </entry>
                 </table>
             </expression>
         </input>
@@ -292,11 +315,19 @@
             <expression>
                 <table>
                     <property>engines/engine[0]/rpm</property>
-                    <entry><ind>    0 </ind><dep>  -1.0 </dep></entry>
-                    <entry><ind> 948 </ind><dep> -1.0 </dep></entry>
-                    <entry><ind> 6000 </ind><dep>  -1.0 </dep></entry>
-                </table>0
-            </expression>
+                    <entry>
+                        <ind> 0 </ind>
+                        <dep> -1.0 </dep>
+                    </entry>
+                    <entry>
+                        <ind> 948 </ind>
+                        <dep> -1.0 </dep>
+                    </entry>
+                    <entry>
+                        <ind> 6000 </ind>
+                        <dep> -1.0 </dep>
+                    </entry>
+                </table>0 </expression>
         </input>
         <output>
             <property>environment/aircraft-effects/splash-zr</property>
@@ -371,5 +402,54 @@
             <property>environment/aircraft-effects/splash-vector-z</property>
         </output>
     </filter>
+
+
+    <!--Autopilot-->
+
+    <pid-controller>
+        <name>Heading hold</name>
+        <debug>false</debug>
+        <enable>
+            <prop>autopilot/locks/heading</prop>
+            <value>1</value>
+        </enable>
+        <input>
+            <prop>orientation/roll-deg</prop>
+        </input>
+        <reference>autopilot/settings/target-roll-deg</reference>
+        <output>
+            <prop>controls/flight/aileron</prop>
+        </output>
+        <config>
+            <Kp>0.01</Kp>
+            <Ti>1.0</Ti>
+            <Td>0.0</Td>
+            <u_min>-1.0</u_min>
+            <u_max>1.0</u_max>
+        </config>
+    </pid-controller>
+
+    <pid-controller>
+        <name>Pitch hold</name>
+        <debug>false</debug>
+        <enable>
+            <prop>autopilot/locks/altitude</prop>
+            <value>1</value>
+        </enable>
+        <input>
+            <prop>orientation/pitch-deg</prop>
+        </input>
+        <reference>autopilot/settings/target-pitch-deg</reference>
+        <output>
+            <prop>controls/flight/elevator</prop>
+        </output>
+        <config>
+            <Kp>-0.01</Kp>
+            <Ti>1.0</Ti>
+            <Td>0.0</Td>
+            <u_min>-1.0</u_min>
+            <u_max>1.0</u_max>
+        </config>
+    </pid-controller>
 
 </PropertyList>

@@ -213,4 +213,15 @@
         </canvas_map>
     </nasal>
 
+    <autopilot>
+        <locks>
+            <heading>0</heading>
+            <altitude>0</altitude>
+        </locks>
+        <settings>
+            <target-roll-deg>0</target-roll-deg>
+            <target-pitch-deg>0</target-pitch-deg>
+        </settings>
+    </autopilot>
+
 </PropertyList>
