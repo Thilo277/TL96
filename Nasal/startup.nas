@@ -50,6 +50,7 @@ if(getprop("aircraft/time/hobbssec") == nil) {
 
 setprop("aircraft/time/hobbshour", (getprop("aircraft/time/hobbssec")/60)/60);
 print("Motor Hours: ~ ", math.round(getprop("aircraft/time/hobbshour"), 1));
+print("Map AIRAC: ", getprop("aircraft/ipad/airac"));
 print("##################################################################################################################");
 print("");
 var hobbsmeter = func {

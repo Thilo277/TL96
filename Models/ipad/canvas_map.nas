@@ -1,7 +1,7 @@
 var window = canvas.new({
   "name": "canvas_map",   # The name is optional but allow for easier identification
   "size": [1848, 2524], # Size of the underlying texture (should be a power of 2, required) [Resolution]
-  "view": [768, 1024],  # Virtual resolution (Defines the coordinate system of the canvas [Dimensions]
+  "view": [3072, 4096],  # Virtual resolution (Defines the coordinate system of the canvas [Dimensions]
                         # which will be stretched the size of the texture, required)
   "mipmapping": 1       # Enable mipmapping (optional)
 });
@@ -18,17 +18,17 @@ var g = window.createGroup();
 var maps_base = getprop("/sim/fg-home") ~ '/cache/maps';
 
 var airac = getprop('aircraft/ipad/airac');
-print('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~airac~'/aero/latest');
+#print('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~airac~'/aero/latest');
 var makeUrl =
 string.compileTemplate('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~airac~'/aero/latest');
   #https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}.png
   var makePath =
   string.compileTemplate(maps_base ~ '/{z}/{x}/{y}.png');
-  var num_tiles = [4, 3];
+  var num_tiles = [7, 8];
 
   var center_tile_offset = [
-  (num_tiles[0] - 1)/4,
-  (num_tiles[1] - 1)/2
+  (num_tiles[0] - 1)/2,
+  (num_tiles[1] - 1)/1.75
   ];
 
 
@@ -46,6 +46,7 @@ for(var x = 0; x < num_tiles[0]; x += 1)
 
 var last_tile = [-1,-1];
 
+var count = 0;
 ##
 # this is the callback that will be regularly called by the timer
 # to update the map
@@ -88,26 +89,35 @@ var updateTiles = func()
         if( io.stat(img_path) == nil )
         { # image not found, save in $FG_HOME
           var img_url = makeUrl(pos);
-           print('requesting ' ~ img_url);
+          # print('requesting ' ~ img_url);
           http.save(img_url, img_path)
-           .done(func {print('received image ' ~ img_path); tile.set("src", img_path);})
-          .fail(func (r) print('Failed to get image ' ~ img_path ~ ' ' ~ r.status ~ ': ' ~ r.reason));
+          #.done(func {print('received image ' ~ img_path); tile.set("src", img_path);})
+          #.fail(func (r){ print('Failed to get image ' ~ img_path ~ ' ' ~ r.status ~ ': ' ~ r.reason);});
         }
         else # cached image found, reusing
         {
-          print('loading ' ~ img_path);
+          #print('loading ' ~ img_path);
           tile.set("src", img_path)
         }
         })();
       }
 
-      last_tile = tile_index;
+      if(count == 10)
+      {
+        last_tile = tile_index;
+      }
+      else
+      {
+        count = count + 1;
+        #print(count);
+      }
     }
 };
 
+
 ##
 # set up a timer that will invoke updateTiles at 2-second intervals
-var update_timer = maketimer(0.3, updateTiles);
+var update_timer = maketimer(1, updateTiles);
 # actually start the timer
 update_timer.start();
 
