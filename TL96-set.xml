@@ -202,9 +202,9 @@
     </fdm>
 
     <nasal>
-        <ar6201>
-            <file>Aircraft/TL96/Models/Instruments/ar-6201/ar6201.nas</file>
-        </ar6201>
+        <ar3201>
+            <file>Aircraft/TL96/Models/Instruments/ar-3201/ar3201.nas</file>
+        </ar3201>
         <startup>
             <file>Aircraft/TL96/Nasal/startup.nas</file>
         </startup>
