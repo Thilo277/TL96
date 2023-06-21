@@ -169,6 +169,10 @@
                 <property>aircraft/ipad/screen</property>
                 <value>2</value>
             </binding>
+            <binding>
+                <command>nasal</command>
+                <script>canvas_map.update_timer.start();</script>
+            </binding>
         </action>
     </animation>
 

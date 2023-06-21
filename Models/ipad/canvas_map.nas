@@ -52,6 +52,7 @@ var count = 0;
 # to update the map
 var updateTiles = func()
 {
+  
   # get current position
   var lat = getprop('/position/latitude-deg');
   var lon = getprop('/position/longitude-deg');
@@ -102,24 +103,21 @@ var updateTiles = func()
         })();
       }
 
-      if(count == 10)
-      {
-        last_tile = tile_index;
-      }
-      else
-      {
-        count = count + 1;
-        #print(count);
-      }
+        #last_tile = tile_index;
     }
 };
-
+var mapstart = func{
+  if(getprop('aircraft/ipad/screen') == 2) {thread.newthread(updateTiles);}
+  else{update_timer.stop();}
+  #updateTiles();
+  };
 
 ##
 # set up a timer that will invoke updateTiles at 2-second intervals
-var update_timer = maketimer(1, updateTiles);
+var update_timer = maketimer(1, mapstart);
 # actually start the timer
-update_timer.start();
+
+
 
 
 # Place it on all objects called PFD-Screen
