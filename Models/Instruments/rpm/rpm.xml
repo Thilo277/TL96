@@ -7,7 +7,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>engines/engine/rpm</property>
+    <property>sim/multiplay/generic/float[13]</property>
     <interpolation>
       <entry>
         <ind>0</ind>

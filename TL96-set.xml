@@ -166,6 +166,7 @@
                 <float n="10" alias="/engines/engine/cht-degc" />
                 <float n="11" alias="/engines/engine/oil-temperature-degc" />
                 <float n="12" alias="/engines/engine/oil-pressure-bar01" />
+                <float n="13" alias="/engines/engine[0]/rpm" />
                 <int n="0" alias="/aircraft/magnetos/Lmag" />
                 <int n="1" alias="/aircraft/magnetos/Rmag" />
                 <int n="2" alias="/aircraft/battery/switch" />

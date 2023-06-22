@@ -80,6 +80,7 @@ var main = func {
     setprop(prop~"engines/engine/oil-pressure-bar01", getprop(prop~"sim/multiplay/generic/float[12]"));
     setprop(prop~"autopilot/locks/heading", getprop(prop~"sim/multiplay/generic/int[8]"));
     setprop(prop~"autopilot/locks/altitude", getprop(prop~"sim/multiplay/generic/int[9]"));
+    setprop(prop~"engines/engine/rpm", getprop(prop~"sim/multiplay/generic/float[13]"));
 
 
 
