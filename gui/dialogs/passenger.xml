@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <name>passenger</name>
+  <modal>false</modal>
+  <layout>vbox</layout>
+
+  <text>
+    <label>Type in MP-Pilot Callsign</label>
+  </text>
+
+<!--  <group> -->
+    <default-padding>10</default-padding>
+
+    <input>
+    <name>callsign-input</name>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>25</height>
+      <property>passenger/callsign</property>
+    </input>
+
+
+    <button>
+      <legend>OK</legend>
+      <default>true</default>
+      <equal>true</equal>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>callsign-input</object-name>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>passenger.start();</script>
+      </binding>
+      <!-- <binding>
+        <command>dialog-close</command>
+      </binding> -->
+    </button>
+
+    <empty>
+      <stretch>true</stretch>
+    </empty>
+
+    <button>
+      <legend>Cancel</legend>
+      <equal>true</equal>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+    <empty>
+      <stretch>true</stretch>
+    </empty>
+  <!-- </group> -->
+</PropertyList>

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<PropertyList include="Aircraft/Generic/Human/Include/walker-include.xml">
+    <sim>
+        <description>TL96 Star (Passenger/Instructor)</description>
+
+        <rating>
+            <FDM type="int">4</FDM>
+            <systems type="int">5</systems>
+            <cockpit type="int">4</cockpit>
+            <model type="int">4</model>
+        </rating>
+        <author>Thilo (thilo2707@gmail.com)</author>
+        <flight-model>jsb</flight-model>
+        <aero>TL96</aero>
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-ex.png</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-ex2.png</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TL96-int.png</path>
+            </preview>
+        </previews>
+        <model>
+            <path>Aircraft/TL96/Models/TL96-passenger.xml</path>
+        </model>
+
+        <view n="0">
+            <name>Pilot</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <x-offset-m type="double">-0.27</x-offset-m>
+                <y-offset-m type="double">0.51</y-offset-m>
+                <z-offset-m type="double">0.17</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <limits>
+                    <enabled type="bool">true</enabled>
+                    <left>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
+
+        <view n="1">
+            <name>Instructor</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <x-offset-m type="double">0.27</x-offset-m>
+                <y-offset-m type="double">0.51</y-offset-m>
+                <z-offset-m type="double">0.17</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <limits>
+                    <enabled type="bool">true</enabled>
+                    <left>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
+
+        <sound>
+            <path type="string">Sounds/sound.xml</path>
+        </sound>
+
+        <menubar>
+            <default>
+                <menu n="200">
+                    <label>Passenger Controls</label>
+                    <enabled type="bool">true</enabled>
+
+                    <item>
+                        <label>Select MP pilot</label>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>passenger</dialog-name>
+                        </binding>
+                    </item>
+
+                </menu>
+            </default>
+        </menubar>
+
+    </sim>
+
+    <aircraft>
+        <ipad>
+            <ison>0</ison>
+            <airac type="string">2306</airac>
+        </ipad>
+    </aircraft>
+
+
+    <nasal>
+        <passenger>
+            <file>Aircraft/TL96/Nasal/passenger.nas</file>
+        </passenger>
+        <canvas_map>
+            <file>Aircraft/TL96/Models/ipad/canvas_map.nas</file>
+        </canvas_map>
+    </nasal>
+
+</PropertyList>

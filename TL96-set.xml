@@ -74,6 +74,38 @@
             </dynamic>
         </view>
 
+        <view n="1">
+            <name>Instructor</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <x-offset-m type="double">0.27</x-offset-m>
+                <y-offset-m type="double">0.51</y-offset-m>
+                <z-offset-m type="double">0.17</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <limits>
+                    <enabled type="bool">true</enabled>
+                    <left>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.15</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
+
         <sound>
             <path type="string">Sounds/sound.xml</path>
         </sound>
@@ -118,6 +150,34 @@
         <aircraft-data>
             <path>aircraft/time/hobbssec</path>
         </aircraft-data>
+
+        <multiplay>
+            <generic>
+                <float n="0" alias="/instrumentation/altimeter/indicated-altitude-ft"/>
+                <float n="1" alias="/instrumentation/airspeed-indicator/indicated-speed-kt"/>
+                <float n="2" alias="/instrumentation/vertical-speed-indicator/indicated-speed-fpm"/>
+                <float n="3" alias="/instrumentation/slip-skid-ball/indicated-slip-skid"/>
+                <float n="4" alias="/consumables/fuel/tank/level-gal_us"/>
+                <float n="5" alias="/controls/engines/engine/mixture"/>
+                <float n="6" alias="/controls/engines/engine/throttle"/>
+                <float n="7" alias="/controls/flight/elevator-trim"/>
+                <float n="8" alias="/controls/flight/rudder-trim"/>
+                <float n="9" alias="/engines/engine/egt-degc"/>
+                <float n="10" alias="/engines/engine/cht-degc"/>
+                <float n="11" alias="/engines/engine/oil-temperature-degc"/>
+                <float n="12" alias="/engines/engine/oil-pressure-bar01"/>
+                <int n="0" alias="/aircraft/magnetos/Lmag"/>
+                <int n="1" alias="/aircraft/magnetos/Rmag"/>
+                <int n="2" alias="/aircraft/battery/switch"/>
+                <int n="3" alias="/aircraft/flydat/ison"/>
+                <int n="4" alias="/aircraft/ipad/ison"/>
+                <int n="5" alias="/aircraft/ipad/screen"/>
+                <int n="6" alias="/controls/gear/brake-parking"/>
+                <int n="7" alias="/aircraft/ipad/error"/>
+                <int n="8" alias="/autopilot/locks/heading"/>
+                <int n="9" alias="/autopilot/locks/altitude"/>
+            </generic>
+        </multiplay>
     </sim>
 
     <payload>
