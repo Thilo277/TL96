@@ -74,7 +74,7 @@
             </dynamic>
         </view>
 
-        <view n="1">
+        <view n="101">
             <name>Instructor</name>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
