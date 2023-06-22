@@ -38,7 +38,7 @@
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config>
-                <x-offset-m type="double">-0.27</x-offset-m>
+                <x-offset-m type="double">0.25</x-offset-m>
                 <y-offset-m type="double">0.51</y-offset-m>
                 <z-offset-m type="double">0.17</z-offset-m>
                 <pitch-offset-deg>-10</pitch-offset-deg>
@@ -65,12 +65,12 @@
             </dynamic>
         </view>
 
-        <view n="1">
-            <name>Instructor</name>
+        <!-- <view n="101">
+            <name>Passenger</name>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config>
-                <x-offset-m type="double">0.27</x-offset-m>
+                <x-offset-m type="double">0.25</x-offset-m>
                 <y-offset-m type="double">0.51</y-offset-m>
                 <z-offset-m type="double">0.17</z-offset-m>
                 <pitch-offset-deg>-10</pitch-offset-deg>
@@ -95,7 +95,7 @@
             <dynamic>
                 <enabled type="bool">false</enabled>
             </dynamic>
-        </view>
+        </view> -->
 
         <sound>
             <path type="string">Sounds/sound.xml</path>

@@ -33,9 +33,9 @@
         <command>nasal</command>
         <script>passenger.start();</script>
       </binding>
-      <!-- <binding>
+      <binding>
         <command>dialog-close</command>
-      </binding> -->
+      </binding>
     </button>
 
     <empty>

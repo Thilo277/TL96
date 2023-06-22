@@ -93,6 +93,7 @@ var start = func {
     callsign = getprop('passenger/callsign');
     mainloop.start();
     view.model_view_handler.select(callsign, 1);
+    setprop('sim/view[0]/config/x-offset-m', getprop('sim/view[0]/config/x-offset-m')-0.5);
 }
 
 
