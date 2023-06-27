@@ -3,6 +3,10 @@
 <PropertyList>
 
     <path>TL96.ac</path>
+
+    <sound>
+        <path type="string">Aircraft/TL96/Sounds/mp-sound.xml</path>
+    </sound>
     <model>
         <path>Aircraft/TL96/Models/TL96-instruments.xml</path>
         <!--<offsets>

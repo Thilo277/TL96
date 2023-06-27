@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+  <fx>
+    <mpengine>
+      <name>mpengine</name>
+      <mode>looped</mode>
+      <path>Aircraft/TL96/Sounds/wasp.wav</path>
+      <condition>
+            <property>sim/multiplay/generic/float[13]</property>
+      </condition>
+      <volume>
+        <property>sim/multiplay/generic/float[13]</property>
+        <factor>0.0002</factor>
+        <min>0.15</min>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <property>sim/multiplay/generic/float[13]</property>
+        <factor>0.0002</factor>
+        <min>0.5</min>
+        <max>1.0</max>
+        <offset>0.15</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </mpengine>
+
+  </fx>
+</PropertyList>
