@@ -181,6 +181,7 @@
         </multiplay>
 
         <expected-aircraft-dir-name>TL96</expected-aircraft-dir-name>
+        <primary-set type="bool">true</primary-set>
 
     </sim>
 

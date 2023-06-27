@@ -118,6 +118,8 @@
                 </menu>
             </default>
         </menubar>
+    
+        <variant-of>TL96</variant-of>
 
     </sim>
 
