@@ -53,6 +53,18 @@ print("Motor Hours: ~ ", math.round(getprop("aircraft/time/hobbshour"), 1));
 print("Map AIRAC: ", getprop("aircraft/ipad/airac"));
 print("##################################################################################################################");
 print("");
+
+if(getprop("sim/multiplay/callsign") == "D-MSTJ") {
+    print("\"You have been the Juliet in my Callsign. That in itself is a tremendous thing.\" ~ quote inspired by E.B. White, Charlotte's Web");
+    print("Delta Mike Sierra Tango Juliet without Juliet, Delta Mike Sierra Tango Tango");
+    print("");
+    print("Sorry, you can't fly with D-MSTJ");
+    print("");
+    setprop("sim/multiplay/callsign", "D-MSTT");
+    print("Set callsign to D-MSTT");
+    print("");
+}
+
 var hobbsmeter = func {
     if(getprop("engines/engine/running")){
         # print("Time started");

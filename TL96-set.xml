@@ -216,7 +216,7 @@
     <aircraft>
         <ipad>
             <ison>0</ison>
-            <airac type="string">2306</airac>
+            <airac type="string">2308</airac>
         </ipad>
         <flydat>
             <ison>0</ison>

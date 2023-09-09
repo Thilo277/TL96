@@ -2845,6 +2845,7 @@
         <object-name>biasktv</object-name>
         <object-name>biaskmh</object-name>
         <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>0.1</factor>
         <offset-m>0</offset-m>
@@ -2911,6 +2912,7 @@
         <object-name>biasktv</object-name>
         <object-name>biaskmh</object-name>
         <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>0.319663</factor>
         <offset-m>0</offset-m>
@@ -2977,6 +2979,7 @@
         <object-name>biasktv</object-name>
         <object-name>biaskmh</object-name>
         <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>-0.41</factor>
         <offset-m>0</offset-m>
@@ -3042,6 +3045,7 @@
         <object-name>biasktv</object-name>
         <object-name>biaskmh</object-name>
         <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
         <type>rotate</type>
         <property>aircraft/ipad/drop-current</property>
         <factor>-90</factor>
@@ -3113,6 +3117,7 @@
         <object-name>biasktv</object-name>
         <object-name>biaskmh</object-name>
         <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
         <type>rotate</type>
         <property>aircraft/ipad/drop-current</property>
         <factor>45</factor>
