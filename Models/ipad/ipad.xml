@@ -4,6 +4,66 @@
 
     <path>ipad.ac</path>
 
+
+    <animation>
+        <name>dropgroup</name>
+        <object-name>charts</object-name>
+        <object-name>chartsscreen</object-name>
+        <object-name>heading</object-name>
+        <object-name>checklists</object-name>
+        <object-name>welcome</object-name>
+        <object-name>checklistscreen</object-name>
+        <object-name>time</object-name>
+        <object-name>ipad</object-name>
+        <object-name>homebutton</object-name>
+        <object-name>infoscreen</object-name>
+        <object-name>information</object-name>
+        <object-name>settings</object-name>
+        <object-name>mail</object-name>
+        <object-name>photos</object-name>
+        <object-name>camera</object-name>
+        <object-name>gas</object-name>
+        <object-name>checklist2</object-name>
+
+        <object-name>cstartup</object-name>
+        <object-name>cbatt</object-name>
+        <object-name>cipad</object-name>
+        <object-name>cfueltank</object-name>
+        <object-name>cpark</object-name>
+        <object-name>cdat</object-name>
+        <object-name>cfuel</object-name>
+        <object-name>czund</object-name>
+        <object-name>cstart</object-name>
+        <object-name>cflaps</object-name>
+
+        <object-name>next</object-name>
+        <object-name>prev</object-name>
+
+        <object-name>cshutdown</object-name>
+        <object-name>csbatt</object-name>
+        <object-name>csipad</object-name>
+        <object-name>cspark</object-name>
+        <object-name>csdat</object-name>
+        <object-name>csfuel</object-name>
+        <object-name>cszund</object-name>
+        <object-name>csflaps</object-name>
+
+        <object-name>binformation</object-name>
+        <object-name>baltft</object-name>
+        <object-name>baltftv</object-name>
+        <object-name>baltm</object-name>
+        <object-name>baltmv</object-name>
+        <object-name>baltftnn</object-name>
+        <object-name>baltftvnn</object-name>
+        <object-name>baltmnn</object-name>
+        <object-name>baltmvnn</object-name>
+        <object-name>biaskt</object-name>
+        <object-name>biasktv</object-name>
+        <object-name>biaskmh</object-name>
+        <object-name>biaskmhv</object-name>
+        <object-name>blackscreen</object-name>
+    </animation>
+
     <animation>
         <object-name>charts</object-name>
         <object-name>chartsscreen</object-name>
@@ -2791,61 +2851,7 @@
 
     <animation>
         <type>translate</type>
-        <object-name>charts</object-name>
-        <object-name>chartsscreen</object-name>
-        <object-name>heading</object-name>
-        <object-name>checklists</object-name>
-        <object-name>welcome</object-name>
-        <object-name>checklistscreen</object-name>
-        <object-name>time</object-name>
-        <object-name>ipad</object-name>
-        <object-name>homebutton</object-name>
-        <object-name>infoscreen</object-name>
-        <object-name>information</object-name>
-        <object-name>settings</object-name>
-        <object-name>mail</object-name>
-        <object-name>photos</object-name>
-        <object-name>camera</object-name>
-        <object-name>gas</object-name>
-        <object-name>checklist2</object-name>
-
-        <object-name>cstartup</object-name>
-        <object-name>cbatt</object-name>
-        <object-name>cipad</object-name>
-        <object-name>cfueltank</object-name>
-        <object-name>cpark</object-name>
-        <object-name>cdat</object-name>
-        <object-name>cfuel</object-name>
-        <object-name>czund</object-name>
-        <object-name>cstart</object-name>
-        <object-name>cflaps</object-name>
-
-        <object-name>next</object-name>
-        <object-name>prev</object-name>
-
-        <object-name>cshutdown</object-name>
-        <object-name>csbatt</object-name>
-        <object-name>csipad</object-name>
-        <object-name>cspark</object-name>
-        <object-name>csdat</object-name>
-        <object-name>csfuel</object-name>
-        <object-name>cszund</object-name>
-        <object-name>csflaps</object-name>
-
-        <object-name>binformation</object-name>
-        <object-name>baltft</object-name>
-        <object-name>baltftv</object-name>
-        <object-name>baltm</object-name>
-        <object-name>baltmv</object-name>
-        <object-name>baltftnn</object-name>
-        <object-name>baltftvnn</object-name>
-        <object-name>baltmnn</object-name>
-        <object-name>baltmvnn</object-name>
-        <object-name>biaskt</object-name>
-        <object-name>biasktv</object-name>
-        <object-name>biaskmh</object-name>
-        <object-name>biaskmhv</object-name>
-        <object-name>blackscreen</object-name>
+        <object-name>dropgroup</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>0.1</factor>
         <offset-m>0</offset-m>
@@ -2858,61 +2864,7 @@
 
     <animation>
         <type>translate</type>
-        <object-name>charts</object-name>
-        <object-name>chartsscreen</object-name>
-        <object-name>heading</object-name>
-        <object-name>checklists</object-name>
-        <object-name>welcome</object-name>
-        <object-name>checklistscreen</object-name>
-        <object-name>time</object-name>
-        <object-name>ipad</object-name>
-        <object-name>homebutton</object-name>
-        <object-name>infoscreen</object-name>
-        <object-name>information</object-name>
-        <object-name>settings</object-name>
-        <object-name>mail</object-name>
-        <object-name>photos</object-name>
-        <object-name>camera</object-name>
-        <object-name>gas</object-name>
-        <object-name>checklist2</object-name>
-
-        <object-name>cstartup</object-name>
-        <object-name>cbatt</object-name>
-        <object-name>cipad</object-name>
-        <object-name>cfueltank</object-name>
-        <object-name>cpark</object-name>
-        <object-name>cdat</object-name>
-        <object-name>cfuel</object-name>
-        <object-name>czund</object-name>
-        <object-name>cstart</object-name>
-        <object-name>cflaps</object-name>
-
-        <object-name>next</object-name>
-        <object-name>prev</object-name>
-
-        <object-name>cshutdown</object-name>
-        <object-name>csbatt</object-name>
-        <object-name>csipad</object-name>
-        <object-name>cspark</object-name>
-        <object-name>csdat</object-name>
-        <object-name>csfuel</object-name>
-        <object-name>cszund</object-name>
-        <object-name>csflaps</object-name>
-
-        <object-name>binformation</object-name>
-        <object-name>baltft</object-name>
-        <object-name>baltftv</object-name>
-        <object-name>baltm</object-name>
-        <object-name>baltmv</object-name>
-        <object-name>baltftnn</object-name>
-        <object-name>baltftvnn</object-name>
-        <object-name>baltmnn</object-name>
-        <object-name>baltmvnn</object-name>
-        <object-name>biaskt</object-name>
-        <object-name>biasktv</object-name>
-        <object-name>biaskmh</object-name>
-        <object-name>biaskmhv</object-name>
-        <object-name>blackscreen</object-name>
+        <object-name>dropgroup</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>0.319663</factor>
         <offset-m>0</offset-m>
@@ -2925,61 +2877,7 @@
 
     <animation>
         <type>translate</type>
-        <object-name>charts</object-name>
-        <object-name>chartsscreen</object-name>
-        <object-name>heading</object-name>
-        <object-name>checklists</object-name>
-        <object-name>welcome</object-name>
-        <object-name>checklistscreen</object-name>
-        <object-name>time</object-name>
-        <object-name>ipad</object-name>
-        <object-name>homebutton</object-name>
-        <object-name>infoscreen</object-name>
-        <object-name>information</object-name>
-        <object-name>settings</object-name>
-        <object-name>mail</object-name>
-        <object-name>photos</object-name>
-        <object-name>camera</object-name>
-        <object-name>gas</object-name>
-        <object-name>checklist2</object-name>
-
-        <object-name>cstartup</object-name>
-        <object-name>cbatt</object-name>
-        <object-name>cipad</object-name>
-        <object-name>cfueltank</object-name>
-        <object-name>cpark</object-name>
-        <object-name>cdat</object-name>
-        <object-name>cfuel</object-name>
-        <object-name>czund</object-name>
-        <object-name>cstart</object-name>
-        <object-name>cflaps</object-name>
-
-        <object-name>next</object-name>
-        <object-name>prev</object-name>
-
-        <object-name>cshutdown</object-name>
-        <object-name>csbatt</object-name>
-        <object-name>csipad</object-name>
-        <object-name>cspark</object-name>
-        <object-name>csdat</object-name>
-        <object-name>csfuel</object-name>
-        <object-name>cszund</object-name>
-        <object-name>csflaps</object-name>
-
-        <object-name>binformation</object-name>
-        <object-name>baltft</object-name>
-        <object-name>baltftv</object-name>
-        <object-name>baltm</object-name>
-        <object-name>baltmv</object-name>
-        <object-name>baltftnn</object-name>
-        <object-name>baltftvnn</object-name>
-        <object-name>baltmnn</object-name>
-        <object-name>baltmvnn</object-name>
-        <object-name>biaskt</object-name>
-        <object-name>biasktv</object-name>
-        <object-name>biaskmh</object-name>
-        <object-name>biaskmhv</object-name>
-        <object-name>blackscreen</object-name>
+        <object-name>dropgroup</object-name>
         <property>aircraft/ipad/drop-current</property>
         <factor>-0.41</factor>
         <offset-m>0</offset-m>
@@ -2991,61 +2889,7 @@
     </animation>
 
     <animation>
-        <object-name>charts</object-name>
-        <object-name>chartsscreen</object-name>
-        <object-name>heading</object-name>
-        <object-name>checklists</object-name>
-        <object-name>welcome</object-name>
-        <object-name>checklistscreen</object-name>
-        <object-name>time</object-name>
-        <object-name>ipad</object-name>
-        <object-name>homebutton</object-name>
-        <object-name>infoscreen</object-name>
-        <object-name>information</object-name>
-        <object-name>settings</object-name>
-        <object-name>mail</object-name>
-        <object-name>photos</object-name>
-        <object-name>camera</object-name>
-        <object-name>gas</object-name>
-        <object-name>checklist2</object-name>
-
-        <object-name>cstartup</object-name>
-        <object-name>cbatt</object-name>
-        <object-name>cipad</object-name>
-        <object-name>cfueltank</object-name>
-        <object-name>cpark</object-name>
-        <object-name>cdat</object-name>
-        <object-name>cfuel</object-name>
-        <object-name>czund</object-name>
-        <object-name>cstart</object-name>
-        <object-name>cflaps</object-name>
-
-        <object-name>next</object-name>
-        <object-name>prev</object-name>
-
-        <object-name>cshutdown</object-name>
-        <object-name>csbatt</object-name>
-        <object-name>csipad</object-name>
-        <object-name>cspark</object-name>
-        <object-name>csdat</object-name>
-        <object-name>csfuel</object-name>
-        <object-name>cszund</object-name>
-        <object-name>csflaps</object-name>
-
-        <object-name>binformation</object-name>
-        <object-name>baltft</object-name>
-        <object-name>baltftv</object-name>
-        <object-name>baltm</object-name>
-        <object-name>baltmv</object-name>
-        <object-name>baltftnn</object-name>
-        <object-name>baltftvnn</object-name>
-        <object-name>baltmnn</object-name>
-        <object-name>baltmvnn</object-name>
-        <object-name>biaskt</object-name>
-        <object-name>biasktv</object-name>
-        <object-name>biaskmh</object-name>
-        <object-name>biaskmhv</object-name>
-        <object-name>blackscreen</object-name>
+        <object-name>dropgroup</object-name>
         <type>rotate</type>
         <property>aircraft/ipad/drop-current</property>
         <factor>-90</factor>
@@ -3063,61 +2907,7 @@
     </animation>
 
     <animation>
-        <object-name>charts</object-name>
-        <object-name>chartsscreen</object-name>
-        <object-name>heading</object-name>
-        <object-name>checklists</object-name>
-        <object-name>welcome</object-name>
-        <object-name>checklistscreen</object-name>
-        <object-name>time</object-name>
-        <object-name>ipad</object-name>
-        <object-name>homebutton</object-name>
-        <object-name>infoscreen</object-name>
-        <object-name>information</object-name>
-        <object-name>settings</object-name>
-        <object-name>mail</object-name>
-        <object-name>photos</object-name>
-        <object-name>camera</object-name>
-        <object-name>gas</object-name>
-        <object-name>checklist2</object-name>
-
-        <object-name>cstartup</object-name>
-        <object-name>cbatt</object-name>
-        <object-name>cipad</object-name>
-        <object-name>cfueltank</object-name>
-        <object-name>cpark</object-name>
-        <object-name>cdat</object-name>
-        <object-name>cfuel</object-name>
-        <object-name>czund</object-name>
-        <object-name>cstart</object-name>
-        <object-name>cflaps</object-name>
-
-        <object-name>next</object-name>
-        <object-name>prev</object-name>
-
-        <object-name>cshutdown</object-name>
-        <object-name>csbatt</object-name>
-        <object-name>csipad</object-name>
-        <object-name>cspark</object-name>
-        <object-name>csdat</object-name>
-        <object-name>csfuel</object-name>
-        <object-name>cszund</object-name>
-        <object-name>csflaps</object-name>
-
-        <object-name>binformation</object-name>
-        <object-name>baltft</object-name>
-        <object-name>baltftv</object-name>
-        <object-name>baltm</object-name>
-        <object-name>baltmv</object-name>
-        <object-name>baltftnn</object-name>
-        <object-name>baltftvnn</object-name>
-        <object-name>baltmnn</object-name>
-        <object-name>baltmvnn</object-name>
-        <object-name>biaskt</object-name>
-        <object-name>biasktv</object-name>
-        <object-name>biaskmh</object-name>
-        <object-name>biaskmhv</object-name>
-        <object-name>blackscreen</object-name>
+        <object-name>dropgroup</object-name>
         <type>rotate</type>
         <property>aircraft/ipad/drop-current</property>
         <factor>45</factor>
