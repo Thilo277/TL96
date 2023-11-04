@@ -421,7 +421,7 @@
             <prop>controls/flight/aileron</prop>
         </output>
         <config>
-            <Kp>0.01</Kp>
+            <Kp>0.1</Kp>
             <Ti>1.0</Ti>
             <Td>0.0</Td>
             <u_min>-1.0</u_min>
@@ -444,7 +444,7 @@
             <prop>controls/flight/elevator</prop>
         </output>
         <config>
-            <Kp>-0.01</Kp>
+            <Kp>-0.1</Kp>
             <Ti>1.0</Ti>
             <Td>0.0</Td>
             <u_min>-1.0</u_min>

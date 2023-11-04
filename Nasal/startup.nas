@@ -67,7 +67,7 @@ if(getprop("sim/multiplay/callsign") == "D-MSTJ") {
 
 var hobbsmeter = func {
     if(getprop("engines/engine/running")){
-        # print("Time started");
+        #print("Time started");
         var time = getprop("aircraft/time/hobbssec");
         time = time + 1;
         setprop("aircraft/time/hobbssec", time);

@@ -149,6 +149,7 @@
 
         <aircraft-data>
             <path>aircraft/time/hobbssec</path>
+            <path>aircraft/ipad/airac</path>
         </aircraft-data>
 
         <multiplay>
@@ -216,7 +217,7 @@
     <aircraft>
         <ipad>
             <ison>0</ison>
-            <airac type="string">2308</airac>
+            <airac type="string">0000</airac>
         </ipad>
         <flydat>
             <ison>0</ison>
@@ -288,6 +289,5 @@
             <target-pitch-deg>0</target-pitch-deg>
         </settings>
     </autopilot>
-
 
 </PropertyList>
