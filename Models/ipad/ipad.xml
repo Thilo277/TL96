@@ -505,7 +505,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Hoehe AGL (ft)</text>
+        <text type="string">Altitude AGL (ft)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -637,7 +637,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Hoehe AGL (m)</text>
+        <text type="string">Altitude AGL (m)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -769,7 +769,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Hoehe (ft)</text>
+        <text type="string">Altitude (ft)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -901,7 +901,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Hoehe (m)</text>
+        <text type="string">Altitude (m)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1033,7 +1033,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Geschwindigkeit IAS (kts)</text>
+        <text type="string">Speed IAS (kts)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1165,7 +1165,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Geschwindigkeit IAS (kmh)</text>
+        <text type="string">Speed IAS (kmh)</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1300,7 +1300,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Motorstart</text>
+        <text type="string">Startup</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1364,7 +1364,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Batterie ................ An</text>
+        <text type="string">Battery ................. On</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1428,7 +1428,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">iPad ...................... An</text>
+        <text type="string">iPad ...................... On</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1492,7 +1492,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Treibstofftank ...... Voll</text>
+        <text type="string">Fuel tank ............. Full</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1556,7 +1556,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Parkbremse .......... Gezogen</text>
+        <text type="string">Park brake .......... Pulled</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1620,7 +1620,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">FlyDat ................... An</text>
+        <text type="string">FlyDat ................... On</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1684,7 +1684,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Kraftstoffhahn ....... Auf</text>
+        <text type="string">Fuel lever ............ Open</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1748,7 +1748,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Zuendung L/R ...... An</text>
+        <text type="string">Magneto L/R ........ On</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1812,7 +1812,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Starter .................. Gedrueckt</text>
+        <text type="string">Starter ................... Pressed</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -1876,7 +1876,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Klappen ................. Runter</text>
+        <text type="string">Flaps ..................... Down</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2142,7 +2142,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Abstellen</text>
+        <text type="string">Shutdown</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2206,7 +2206,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Parkbremse .......... Gezogen</text>
+        <text type="string">Park brake .......... Pulled</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2270,7 +2270,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Klappen ................. Hoch</text>
+        <text type="string">Flaps .................... Up</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2334,7 +2334,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Kraftstoffhahn ........ Zu</text>
+        <text type="string">Fuel lever ............ Closed</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2398,7 +2398,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Zuendung L/R ...... Aus</text>
+        <text type="string">Magneto L/R ........ Off</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2462,7 +2462,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">FlyDat .................... Aus</text>
+        <text type="string">FlyDat ................... Off</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2526,7 +2526,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">iPad ....................... Aus</text>
+        <text type="string">iPad ...................... Off</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
@@ -2590,7 +2590,7 @@
         <!-- what type of text to draw, use on of literal, text-value or number-value -->
         <!-- A simple constant, never changing string -->
         <type type="string">literal</type>
-        <text type="string">Batterie .................. Aus</text>
+        <text type="string">Battery .................. Off</text>
 
         <layout>left-to-right</layout> <!-- default -->
         <!--
