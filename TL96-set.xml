@@ -142,14 +142,19 @@
                             <script>startup.autostart()</script>
                         </binding>
                     </item>
-
+                    <item>
+                        <label>Select MP Instructor</label>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>instructor</dialog-name>
+                        </binding>
+                    </item>
                 </menu>
             </default>
         </menubar>
 
         <aircraft-data>
             <path>aircraft/time/hobbssec</path>
-            <path>aircraft/ipad/airac</path>
         </aircraft-data>
 
         <multiplay>
@@ -217,7 +222,6 @@
     <aircraft>
         <ipad>
             <ison>0</ison>
-            <airac type="string">0000</airac>
         </ipad>
         <flydat>
             <ison>0</ison>

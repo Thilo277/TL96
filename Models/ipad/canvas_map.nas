@@ -19,27 +19,12 @@ var maps_base = getprop("/sim/fg-home") ~ '/cache/maps';
 
 
 
-var airac = getprop('aircraft/ipad/airac');
 #print('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~airac~'/aero/latest');
-var makeUrl = string.compileTemplate('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~airac~'/aero/latest');
+var makeUrl = string.compileTemplate('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path=latest/aero/latest');
 #https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}.png
 var makePath = string.compileTemplate(maps_base ~ '/{z}/{x}/{y}.png');
 var num_tiles = [7, 8];
 
-var updateAIRAC = func {
-
-  var AIRAC_ARRAY = ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
-  var AIRAC_YM = (getprop("sim/time/real/year") - 2000) ~ AIRAC_ARRAY[getprop("sim/time/real/month") - 1];
-  if(getprop("sim/time/real/month") == 1) {
-      AIRAC_YM = (getprop("sim/time/real/year") - 2001) ~ AIRAC_ARRAY[getprop("sim/time/real/month") - 1];
-  }
-
-  if(getprop("aircraft/ipad/airac") != AIRAC_YM) {
-    makeUrl = string.compileTemplate('https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path='~AIRAC_YM~'/aero/latest');
-    setprop("aircraft/ipad/airac", AIRAC_YM);
-    print("Updated AIRAC to: ", AIRAC_YM);
-  }
-}
 
 
 var center_tile_offset = [

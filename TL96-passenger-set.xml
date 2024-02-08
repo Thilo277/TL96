@@ -101,6 +101,12 @@
             <path type="string">Sounds/sound.xml</path>
         </sound>
 
+        <multiplay>
+            <generic>
+                <int n="0">0</int>
+            </generic>
+        </multiplay>
+
         <menubar>
             <default>
                 <menu n="200">
@@ -114,10 +120,19 @@
                             <dialog-name>passenger</dialog-name>
                         </binding>
                     </item>
+                    <item>
+                        <label>motor failure on student pilot (requires student to set your callsign as instructor)</label>
+                        <binding>
+                            <command>property-toggle</command>
+                            <property>sim/multiplay/generic/int[0]</property>
+                        </binding>
+                    </item>
 
                 </menu>
             </default>
         </menubar>
+
+        
     
         <variant-of>TL96</variant-of>
 
@@ -126,9 +141,14 @@
     <aircraft>
         <ipad>
             <ison>0</ison>
-            <airac type="string">2306</airac>
         </ipad>
     </aircraft>
+
+    <controls>
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+    </controls>
 
 
     <nasal>

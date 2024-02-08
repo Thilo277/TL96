@@ -231,10 +231,6 @@
             </binding>
             <binding>
                 <command>nasal</command>
-                <script>canvas_map.updateAIRAC();</script>
-            </binding>
-            <binding>
-                <command>nasal</command>
                 <script>canvas_map.update_timer.start();</script>
             </binding>
         </action>

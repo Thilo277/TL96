@@ -48,39 +48,40 @@ print("");
 
 var callsign = "";
 #var num = getprop(prop);
-
+var mpnumber = 0;
+var prop = "";
 
 
 var main = func {
     #print("main");
-    var mpnumber = getprop("ai/models/callsigns/"~callsign);
-    var prop = "ai/models/multiplayer["~mpnumber~"]/";
-
-
-    setprop(prop~"instrumentation/altimeter/indicated-altitude-ft", getprop(prop~"sim/multiplay/generic/float[0]"));
-    setprop(prop~"instrumentation/airspeed-indicator/indicated-speed-kt", getprop(prop~"sim/multiplay/generic/float[1]"));
-    setprop(prop~"instrumentation/vertical-speed-indicator/indicated-speed-fpm", getprop(prop~"sim/multiplay/generic/float[2]"));
-    setprop(prop~"instrumentation/slip-skid-ball/indicated-slip-skid", getprop(prop~"sim/multiplay/generic/float[3]"));
-    setprop(prop~"consumables/fuel/tank/level-gal_us", getprop(prop~"sim/multiplay/generic/float[4]"));
-    setprop(prop~"aircraft/magnetos/Lmag", getprop(prop~"sim/multiplay/generic/int[0]"));
-    setprop(prop~"aircraft/magnetos/Rmag", getprop(prop~"sim/multiplay/generic/int[1]"));
-    setprop(prop~"aircraft/battery/switch", getprop(prop~"sim/multiplay/generic/int[2]"));
-    setprop(prop~"aircraft/flydat/ison", getprop(prop~"sim/multiplay/generic/int[3]"));
-    setprop(prop~"aircraft/ipad/ison", getprop(prop~"sim/multiplay/generic/int[4]"));
-    setprop(prop~"aircraft/ipad/screen", getprop(prop~"sim/multiplay/generic/int[5]"));
-    setprop(prop~"controls/gear/brake-parking", getprop(prop~"sim/multiplay/generic/int[6]"));
-    setprop(prop~"aircraft/ipad/error", getprop(prop~"sim/multiplay/generic/int[7]"));
-    setprop(prop~"controls/engines/engine/mixture", getprop(prop~"sim/multiplay/generic/float[5]"));
-    setprop(prop~"controls/engines/engine/throttle", getprop(prop~"sim/multiplay/generic/float[6]"));
-    setprop(prop~"controls/flight/elevator-trim", getprop(prop~"sim/multiplay/generic/float[7]"));
-    setprop(prop~"controls/flight/rudder-trim", getprop(prop~"sim/multiplay/generic/float[8]"));
-    setprop(prop~"engines/engine/egt-degc", getprop(prop~"sim/multiplay/generic/float[9]"));
-    setprop(prop~"engines/engine/cht-degc", getprop(prop~"sim/multiplay/generic/float[10]"));
-    setprop(prop~"engines/engine/oil-temperature-degc", getprop(prop~"sim/multiplay/generic/float[11]"));
-    setprop(prop~"engines/engine/oil-pressure-bar01", getprop(prop~"sim/multiplay/generic/float[12]"));
-    setprop(prop~"autopilot/locks/heading", getprop(prop~"sim/multiplay/generic/int[8]"));
-    setprop(prop~"autopilot/locks/altitude", getprop(prop~"sim/multiplay/generic/int[9]"));
-    setprop(prop~"engines/engine/rpm", getprop(prop~"sim/multiplay/generic/float[13]"));
+    
+    while(1==1){
+        setprop(prop~"instrumentation/altimeter/indicated-altitude-ft", getprop(prop~"sim/multiplay/generic/float[0]"));
+        setprop(prop~"instrumentation/airspeed-indicator/indicated-speed-kt", getprop(prop~"sim/multiplay/generic/float[1]"));
+        setprop(prop~"instrumentation/vertical-speed-indicator/indicated-speed-fpm", getprop(prop~"sim/multiplay/generic/float[2]"));
+        setprop(prop~"instrumentation/slip-skid-ball/indicated-slip-skid", getprop(prop~"sim/multiplay/generic/float[3]"));
+        setprop(prop~"consumables/fuel/tank/level-gal_us", getprop(prop~"sim/multiplay/generic/float[4]"));
+        setprop(prop~"aircraft/magnetos/Lmag", getprop(prop~"sim/multiplay/generic/int[0]"));
+        setprop(prop~"aircraft/magnetos/Rmag", getprop(prop~"sim/multiplay/generic/int[1]"));
+        setprop(prop~"aircraft/battery/switch", getprop(prop~"sim/multiplay/generic/int[2]"));
+        setprop(prop~"aircraft/flydat/ison", getprop(prop~"sim/multiplay/generic/int[3]"));
+        setprop(prop~"aircraft/ipad/ison", getprop(prop~"sim/multiplay/generic/int[4]"));
+        setprop(prop~"aircraft/ipad/screen", getprop(prop~"sim/multiplay/generic/int[5]"));
+        setprop(prop~"controls/gear/brake-parking", getprop(prop~"sim/multiplay/generic/int[6]"));
+        setprop(prop~"aircraft/ipad/error", getprop(prop~"sim/multiplay/generic/int[7]"));
+        setprop(prop~"controls/engines/engine/mixture", getprop(prop~"sim/multiplay/generic/float[5]"));
+        setprop(prop~"controls/engines/engine/throttle", getprop(prop~"sim/multiplay/generic/float[6]"));
+        setprop(prop~"controls/flight/elevator-trim", getprop(prop~"sim/multiplay/generic/float[7]"));
+        setprop(prop~"controls/flight/rudder-trim", getprop(prop~"sim/multiplay/generic/float[8]"));
+        setprop(prop~"engines/engine/egt-degc", getprop(prop~"sim/multiplay/generic/float[9]"));
+        setprop(prop~"engines/engine/cht-degc", getprop(prop~"sim/multiplay/generic/float[10]"));
+        setprop(prop~"engines/engine/oil-temperature-degc", getprop(prop~"sim/multiplay/generic/float[11]"));
+        setprop(prop~"engines/engine/oil-pressure-bar01", getprop(prop~"sim/multiplay/generic/float[12]"));
+        setprop(prop~"autopilot/locks/heading", getprop(prop~"sim/multiplay/generic/int[8]"));
+        setprop(prop~"autopilot/locks/altitude", getprop(prop~"sim/multiplay/generic/int[9]"));
+        setprop(prop~"engines/engine/rpm", getprop(prop~"sim/multiplay/generic/float[13]"));
+    }
+    
 
 
 
@@ -92,13 +93,16 @@ var start = func {
 
     #print("start");
     callsign = getprop('passenger/callsign');
-    mainloop.start();
+    mpnumber = getprop("ai/models/callsigns/"~callsign);
+    prop = "ai/models/multiplayer["~mpnumber~"]/";
+    # mainloop.start();
     view.model_view_handler.select(callsign, 1);
     setprop('sim/view[0]/config/x-offset-m', getprop('sim/view[0]/config/x-offset-m')-0.5);
+    thread.newthread(main);
 }
 
 
-var mainloop = maketimer(0.1, main);
+# var mainloop = maketimer(0.1, main);
 
 
 

@@ -50,7 +50,6 @@ if(getprop("aircraft/time/hobbssec") == nil) {
 
 setprop("aircraft/time/hobbshour", (getprop("aircraft/time/hobbssec")/60)/60);
 print("Motor Hours: ~ ", math.round(getprop("aircraft/time/hobbshour"), 1));
-print("Map AIRAC: ", getprop("aircraft/ipad/airac"));
 print("##################################################################################################################");
 print("");
 
@@ -146,3 +145,10 @@ var chuteloop = func {
     }
 }
 
+var instructor = func {
+    var callsign = getprop('instructor/callsign');
+    var mpnumber = getprop("ai/models/callsigns/"~callsign);
+    var prop = "ai/models/multiplayer["~mpnumber~"]/";
+    var list = prop~"sim/multiplay/generic/int[0]";
+    var id = setlistener(list, func(){print("instructor turned your motor off!"); setprop("controls/engines/engine/mixture", 0);},0 ,0);
+}
