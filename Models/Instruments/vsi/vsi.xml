@@ -16,6 +16,11 @@
         </emission>
     </animation>
 
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Face</object-name>
+    </effect>
+
     <animation>
         <type>rotate</type>
         <object-name>Needle</object-name>

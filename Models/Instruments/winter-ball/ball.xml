@@ -4,6 +4,13 @@
 
   <path>ball.ac</path>
 
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>ball</object-name>
+    <object-name>ball-back</object-name>
+    <object-name>ball-front</object-name>
+    <object-name>screws</object-name>
+</effect>
 
   <animation>
     <type>rotate</type>

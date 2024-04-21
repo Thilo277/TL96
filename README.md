@@ -1,5 +1,7 @@
 # TL96
 
+# THIS IS THE UNSTABLE TESTING BRANCH FOR HDR TESTS. FOR STABLE DOWNLOAD USE THE MASTER BRANCH!!!
+
 # Basic startup procedure:
 
 1. Fuel Tank ................ Full

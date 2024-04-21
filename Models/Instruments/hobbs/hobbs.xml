@@ -15,6 +15,11 @@
         <object-name>Drum.4</object-name>
     </animation>
 
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>glass_panel</object-name>
+    </effect>
+
 
     <animation>
         <type>textranslate</type>
