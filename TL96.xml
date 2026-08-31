@@ -96,10 +96,10 @@
   <ground_reactions>
 
     <contact type="BOGEY" name="fronttire">
-      <location unit="IN">
-        <x> -41.15 </x>
+      <location unit="M">
+        <x> -1.04516 </x>
         <y> 0 </y>
-        <z> -43.00 </z>
+        <z> -0.999749 </z>
       </location>
       <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
@@ -112,10 +112,10 @@
     </contact>
 
     <contact type="BOGEY" name="mainleft">
-      <location unit="IN">
-        <x> 15.11 </x>
-        <y> -38.88 </y>
-        <z> -43.00 </z>
+      <location unit="M">
+        <x> 0.383773</x>
+        <y> -0.972188 </y>
+        <z> -0.999749 </z>
       </location>
       <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
@@ -128,10 +128,10 @@
     </contact>
 
     <contact type="BOGEY" name="mainright">
-      <location unit="IN">
-        <x> 15.11 </x>
-        <y> 38.88 </y>
-        <z> -43.00 </z>
+      <location unit="M">
+        <x> 0.383773</x>
+        <y> 0.972188 </y>
+        <z> -0.999749 </z>
       </location>
       <static_friction> 0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>

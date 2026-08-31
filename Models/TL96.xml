@@ -70,6 +70,58 @@
 
 
     <animation>
+        <object-name>maingearleft</object-name>
+        <object-name>mainleft</object-name>
+        <type>rotate</type>
+        <property>gear/gear[1]/compression-norm</property>
+        <factor>-17</factor>
+        <center>
+            <x-m>0.391084</x-m>
+            <y-m>-0.193967</y-m>
+            <z-m>-0.212854</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>maingearright</object-name>
+        <object-name>mainright</object-name>
+        <type>rotate</type>
+        <property>gear/gear[2]/compression-norm</property>
+        <factor>17</factor>
+        <center>
+            <x-m>0.391084</x-m>
+            <y-m>0.193967</y-m>
+            <z-m>-0.212854</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>frontgear</object-name>
+        <object-name>fronttire</object-name>
+        <type>translate</type>
+        <property>gear/gear[0]/compression-norm</property>
+        <factor>-0.25</factor>
+        <axis>
+            <x1-m>-0.942256</x1-m>
+            <y1-m>0.0</y1-m>
+            <z1-m>-0.230744</z1-m>
+            <x2-m>-1.09442</x2-m>
+            <y2-m>0.0</y2-m>
+            <z2-m>-0.753818</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
         <object-name>elevator</object-name>
         <type>rotate</type>
         <property>surface-positions/elevator-pos-norm</property>
